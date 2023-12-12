@@ -4,7 +4,7 @@
         <h2 class = "col-md-12 support-text">Поддержка от Drupal-coder</h2>
       </div>
       <div class = "row row-flex support-row">
-        <div class = "col-12 col-sm-5 col-md-4 serv-cols">
+        <div class = "col-12 col-sm-6 col-md-3 serv-cols">
           <div class = "support-service">
             <div class = "serv-num">01.</div>
             <div class = "serv-body">
@@ -16,7 +16,7 @@
             </div>
           </div>
         </div>
-        <div class = "col-12 col-sm-5 col-md-4 serv-cols">
+        <div class = "col-12 col-sm-6 col-md-3 serv-cols">
           <div class = "support-service">
             <div class = "serv-num">02.</div>
             <div class = "serv-body">
@@ -28,7 +28,7 @@
             </div>
           </div>
         </div>
-        <div class = "col-12 col-sm-5 col-md-4 serv-cols">
+        <div class = "col-12 col-sm-6 col-md-3 serv-cols">
           <div class = "support-service">
             <div class = "serv-num">03.</div>
             <div class = "serv-body">
@@ -40,7 +40,7 @@
             </div>
           </div>
         </div>
-        <div class = "col-12 col-sm-5 col-md-4 serv-cols">
+        <div class = "col-12 col-sm-6 col-md-3 serv-cols">
           <div class = "support-service">
             <div class = "serv-num">04.</div>
             <div class = "serv-body">
@@ -52,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div class = "col-12 col-sm-5 col-md-4 serv-cols">
+        <div class = "col-12 col-sm-6 col-md-3 serv-cols">
           <div class = "support-service">
             <div class = "serv-num">05.</div>
             <div class = "serv-body">
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-        <div class = "col-12 col-sm-5 col-md-4 serv-cols">
+        <div class = "col-12 col-sm-6 col-md-3 serv-cols">
           <div class = "support-service">
             <div class = "serv-num">06.</div>
             <div class = "serv-body">
@@ -76,7 +76,7 @@
             </div>
           </div>
         </div>
-        <div class = "col-12 col-sm-5 col-md-4 serv-cols">
+        <div class = "col-12 col-sm-6 col-md-3 serv-cols">
           <div class = "support-service">
             <div class = "serv-num">07.</div>
             <div class = "serv-body">
@@ -88,7 +88,7 @@
             </div>
           </div>
         </div>
-        <div class = "col-12 col-sm-5 col-md-4 serv-cols">
+        <div class = "col-12 col-sm-6 col-md-3 serv-cols">
           <div class = "support-service">
             <div class = "serv-num">08.</div>
             <div class = "serv-body">
@@ -106,24 +106,24 @@
       <img class = "img-fluid face" src = "../assets/img/druplicon.svg" alt = "mask"/>
       <div class = "container">
         <div class = "row">
-          <div class = "col-0 col-md-5"></div>
-          <div class = "col-12 col-md-5">
+          <div class = "col-0 col-md-6"></div>
+          <div class = "col-12 col-md-6">
             <div class = "row">
-              <div class = "col-md-5">
+              <div class = "col-md-6">
                 <h2>Экспертиза в Drupal, опыт 14 лет!</h2>
               </div>
             </div>
             <div class = "row">
-              <div class = "col-12 col-sm-5 mb-2">
+              <div class = "col-12 col-sm-6 mb-2">
                 <div class = "experience-body">Только системный подход – контроль версий, резервирование и тестирование!</div>
               </div>
-              <div class = "col-12 col-sm-5 mb-2">
+              <div class = "col-12 col-sm-6 mb-2">
                 <div class = "experience-body">Только Drupal сайты, не берем на поддержку сайты на других CMS!</div>
               </div>
-              <div class = "col-12 col-sm-5 mb-2">
+              <div class = "col-12 col-sm-6 mb-2">
                 <div class = "experience-body">Учавствуем в разработке ядра Drupal и модулей на Drupal.org, разрабатываем свои модули Drupal</div>
               </div>
-              <div class = "col-12 col-sm-5 mb-2">
+              <div class = "col-12 col-sm-6 mb-2">
                 <div class = "experience-body">Поддерживаем сайты на Drupal 5, 6, 7 и 8</div>
               </div>
             </div>
@@ -139,7 +139,7 @@
   <script>
     export default
     {
-      name: 'SupportApp'
+      name: 'Support'
     }
   </script>
   
