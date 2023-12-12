@@ -148,44 +148,45 @@
     {
       position: absolute;
       width: 30%;
-      height: 60%;
-      margin-left: 70em;
+      height: 65%;
+      margin-left: 75em;
+      z-index: -0.5;
     }
   
     .support
     {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   
     .support-service
     {
       position: relative;
       margin: 0 5px;
-      background: rgb(253, 246, 246);
+      background: rgb(255, 255, 255);
       border-radius: 5px;
-      box-shadow: 10px 10px 30px rgba(29, 29, 29, 0.103);
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.103);
       height: 100%;
-      padding: 20px 20px 40px;
-      min-height: 290px;
+      padding: 25px 25px 45px;
+      min-height: 292px;
     }
   
     .serv-cols
     {
-      margin-bottom: 10px;
+      margin-bottom: 7px;
       padding: 15px 0;
     }
   
     .support-text
     {
       text-align: center;
-      font-size: 40px;
+      font-size: 42px;
       font-weight: 1000;
     }
   
     .serv-num
     {
-      font-size: 10px;
+      font-size: 12px;
       color: rgb(160, 160, 160);
       font-weight: bold;
       margin-bottom: 10px;
@@ -203,6 +204,8 @@
       position: relative;
       color: rgb(96, 101, 114);
       line-height: 1.5;
+      font-size: 16px;
+      z-index: 10;
     }
   
     .serv-img
@@ -210,16 +213,17 @@
       position: absolute;
       right: 0;
       bottom: 0;
+      z-index: 5;
     }
   
     .support .support-row
     {
-      margin-bottom: -210px;
+      margin-bottom: -212px;
     }
   
     .support-row
     {
-      padding: 0 10px;
+      padding: 0 12px;
       position: relative;
       z-index: 20;
     }
@@ -255,12 +259,13 @@
     .experience .container
     {
       position: relative;
+      z-index: 15;
     }
   
     .experience h2
     {
       color: white;
-      font-size: 30px;
+      font-size: 36px;
       font-weight: 1000;
       margin-bottom: 40px;
     }
@@ -287,6 +292,7 @@
       left: 0;
       bottom: 0;
       width: 35%;
+      z-index: 10;
     }
   
     .noyt-img img
@@ -296,7 +302,7 @@
       transform: translateY(16%);
     }
   
-    @media (max-width: 760px)
+    @media (max-width: 767px)
     {
       .noyt-img
       {
