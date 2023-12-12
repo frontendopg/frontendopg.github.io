@@ -1,17 +1,19 @@
 <template>
   <HeaderComponent></HeaderComponent>
   <CompetensiesComponent></CompetensiesComponent>
+  <RatesComponent></RatesComponent>
 </template>
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import CompetensiesComponent from '@/components/Competensies.vue'
-
+import RatesComponent from '@/components/RatesComponent.vue'
 export default {
   name: 'App',
   components: {
     CompetensiesComponent,
-    HeaderComponent
+    HeaderComponent,
+    RatesComponent
   }
 }
 </script>
