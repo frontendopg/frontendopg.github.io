@@ -6,9 +6,9 @@
             Тарифы
           </h1>
         </div>
-        <div class="col-9 price-row mx-auto">
+        <div class="col-10 price-row mx-auto">
           <div class="row">
-            <div class="col-9 col-md-3 mx-auto mt-3 price-block-wrapper price-van">
+            <div class="col-10 col-md-4 mx-auto mt-3 price-block-wrapper price-van">
               <div class="price-block py-2 px-2 pb-3 price-standard">
                 <div class="price-header pt-2">
                   <h2>
@@ -18,10 +18,10 @@
                 <div class="price-body text-center">
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Разработка и поддержка Drupal
                         </p>
@@ -30,10 +30,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Консультации и работы по SEO
                         </p>
@@ -42,10 +42,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Услуги дизайнера
                         </p>
@@ -54,10 +54,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Неиспользованные оплаченные часы переносятся на следующий месяц
                         </p>
@@ -66,10 +66,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Предоплата от 6 000 рублей в месяц
                         </p>
@@ -82,7 +82,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-9 col-md-3 mx-auto mt-1 price-block-wrapper price">
+            <div class="col-10 col-md-4 mx-auto mt-1 price-block-wrapper price">
               <div class="price-block py-4 px-2 pb-3 price-business price-block-active">
                 <div class="price-header pt-2">
                   <h2>
@@ -92,10 +92,10 @@
                 <div class="price-body text-center">
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Разработка и поддержка Drupal
                         </p>
@@ -104,10 +104,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Консультации и работы по SEO
                         </p>
@@ -116,10 +116,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Услуги дизайнера
                         </p>
@@ -128,10 +128,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Высокое время реакции - до 2 рабочих дней
                         </p>
@@ -140,10 +140,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Неиспользованные оплаченные часы не переносятся
                         </p>
@@ -152,10 +152,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Предоплата от 30 000 рублей в месяц
                         </p>
@@ -168,7 +168,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-9 col-md-3 mx-auto mt-3 price-block-wrapper price-billy">
+            <div class="col-10 col-md-4 mx-auto mt-3 price-block-wrapper price-billy">
               <div class="price-block py-2 px-2 pb-3 price-vip">
                 <div class="price-header pt-2">
                   <h2>
@@ -178,10 +178,10 @@
                 <div class="price-body text-center">
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Разработка и поддержка Drupal
                         </p>
@@ -190,10 +190,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Консультации и работы по SEO
                         </p>
@@ -202,10 +202,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Услуги дизайнера
                         </p>
@@ -214,10 +214,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Максимальное время реакции - в день обращения
                         </p>
@@ -226,10 +226,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Неиспользованные оплаченные часы не переносятся
                         </p>
@@ -238,10 +238,10 @@
                   </div>
                   <div class="price-text">
                     <div class="row gx-1">
-                      <div class="col-3">
+                      <div class="col-2">
                         <img src="../assets/img/check-sign.svg" alt="check-sign" width="16" height="16">
                       </div>
-                      <div class="col-9 text-start">
+                      <div class="col-10 text-start">
                         <p>
                           Предоплата от 270 000 рублей в месяц
                         </p>
@@ -258,8 +258,8 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-2"></div>
-        <div class="col-4 col-sm-5 rate-link-block text-center">
+        <div class="col-3"></div>
+        <div class="col-3 col-sm-6 rate-link-block text-center">
           Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные условия!
           <a href="#FooterApp" class="rate-link d-block mt-3">Получить индивидуальный тариф</a>
         </div>
