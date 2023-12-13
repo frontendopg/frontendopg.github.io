@@ -281,8 +281,9 @@
   }
   
   .price-header{
-    color:#d37465;
+    color:#f14c24;
     font-size: 22px;
+    font-weight: bold;
   }
   
   .price-body{
@@ -295,14 +296,14 @@
     transition: all 0.5s ease-in-out;
     margin-top: 10px;
     width: 80%;
-    color: #bc6356;
-    border-color: #cd7466;
+    color: #f14c24;
+    border-color: #f14c24;
   }
   
   .btn-price:hover{
     color:white;
-    background: #bd5c4d;
-    border-color: #c3685a;
+    background: #f14c24;
+    border-color: #f14c24;
   }
   
   .price-block{
@@ -321,16 +322,16 @@
   }
   .price-row:hover .price-block-wrapper:nth-of-type(2n) .price-block .btn-price{
     background: white;
-    color:#f39486;
+    color:#f14c24;
   }
   .price-block-wrapper:nth-of-type(2n) .price-block .btn-price{
-    background: #f28372;
+    background: #f14c24;
     color:white;
   }
   
   .price-row:hover .price-block-wrapper:nth-of-type(2n) .price-block:hover .btn-price,
   .price-block:hover .btn-price{
-    background: #d07264;
+    background: #f14c24;
     color:white;
   }
   
