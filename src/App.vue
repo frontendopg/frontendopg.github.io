@@ -1,18 +1,21 @@
 <template>
   <HeaderComponent></HeaderComponent>
   <CompetensiesComponent></CompetensiesComponent>
+  <SupportComponent></SupportComponent>
   <RatesComponent></RatesComponent>
 </template>
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import CompetensiesComponent from '@/components/Competensies.vue'
+import SupportComponent from '@/components/Support.vue'
 import RatesComponent from '@/components/RatesComponent.vue'
 export default {
   name: 'App',
   components: {
-    CompetensiesComponent,
     HeaderComponent,
+    CompetensiesComponent,
+    SupportComponent
     RatesComponent
   }
 }
