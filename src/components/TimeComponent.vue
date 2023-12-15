@@ -2,13 +2,13 @@
     <div class = "competency-region container-fluid">
       <div class = "competencies">
         <div class = "container">
-          <div class = "row">
-            <div class = "col-md-10 time">
+          <div class = "row justify-content-center">
+            <div class = "col-md-10 time"> 
               <h1 class = "TitleCompetency">Наши профессиональные разработчики выполняют быстро любые задачи</h1>
             </div>
           </div>
-          <div class = "row competencies-row row-flex">
-            <div class = "col-6 col-sm-4">
+          <div class = "row competencies-row justify-content-center row-flex">
+            <div class = "col-6 col-sm-3">
               <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
@@ -40,7 +40,7 @@
                 </div>
               </div>
             </div>
-            <div class = "col-7 col-sm-3">
+            <div class = "col-6 col-sm-3">
               <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
@@ -52,7 +52,7 @@
                     </div>
                   </div>
                   <h1 style = "margin-left: 1.5em">от 8ч</h1>
-                  <div class = "BodyCompetency col-7" style = "margin-left: 3em">Интеграция модуля оплаты</div>
+                  <div class = "BodyCompetency col-6" style = "margin-left: 3em">Интеграция модуля оплаты</div>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@
   <style scoped>
   .time
   {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   
   @media (max-width: 1300px)
@@ -85,22 +85,22 @@
   }
   .competencies
   {
-    padding: 140px 0;
+    padding: 150px 0;
   }
   .OpacityLogo{
-    opacity: 20%;
-    width: 10%;
-    height: 10%;
+    opacity: 15%;
+    width: 8%;
+    height: 8%;
   }
   .TitleCompetency
   {
-    font-size: 38px;
+    font-size: 42px;
     font-weight: 1000;
     margin-bottom: 20px;
   }
   .BodyCompetency
   {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 20px;
   }
   </style>
