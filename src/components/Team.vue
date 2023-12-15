@@ -20,15 +20,15 @@
                       </div>
                     </div>
                   </div>
-                  <div class = "container">
+                  <div class = "row justify-content-center">
                     <h1>Сергей Синица</h1>
-                    <div class = "competency-body col-sm-6">Руководитель оьдела веб-разработки, канд. тех. наук, заместитель директора</div>
+                    <div class = "competency-body col-sm-10">Руководитель отдела веб-разработки, канд. тех. наук, заместитель директора</div>
                   </div>
                 </div>
               </div>
             </div>
             <div class = "col-6 col-sm-4 ots2">
-              <div class = "competency mb-2">
+              <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
                     <div class = "competency-icon">
@@ -37,15 +37,15 @@
                       </div>
                     </div>
                   </div>
-                  <div class = "container">
+                  <div class = "row justify-content-center">
                     <h1>Роман Агабеков</h1>
-                    <div class = "competency-body col-sm-8">Руководитель отдела DevOPS, дирнктор</div>
+                    <div class = "competency-body col-sm-10">Руководитель отдела DevOPS, директор</div>
                   </div>
                 </div>
               </div>
             </div>
             <div class = "col-6 col-sm-4 ots3">
-              <div class = "competency mb-2">
+              <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
                     <div class = "competency-icon">
@@ -54,9 +54,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class = "container">
+                  <div class = "row justify-content-center">
                     <h1>Алексей Синица</h1>
-                    <div class = "competency-body col-sm-8">Руководитель отдела поддержки сайтов</div>
+                    <div class = "competency-body col-sm-10">Руководитель отдела поддержки сайтов</div>
                   </div>
                 </div>
               </div>
@@ -71,9 +71,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class = "container">
+                  <div class = "row justify-content-center">
                     <h1>Дарья Бочкарёва</h1>
-                    <div class = "competency-body col-sm-8">Руководитель отдела продвижения, контекстной рекламы и контент-поддержки сайтов</div>
+                    <div class = "competency-body col-sm-10">Руководитель отдела продвижения, контекстной рекламы и контент-поддержки сайтов</div>
                   </div>
                 </div>
               </div>
@@ -88,9 +88,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class = "container">
+                  <div class = "row justify-content-center">
                     <h1>Ирина Торкунова</h1>
-                    <div class = "competency-body col-sm-7">Менеджер по работе с клиентами</div>
+                    <div class = "competency-body col-sm-10">Менеджер по работе с клиентами</div>
                   </div>
                 </div>
               </div>
@@ -100,7 +100,7 @@
       </div>
       <div class = "text-center mt-2">
         <div class = "container">
-          <a href = "#FooterApp" role = "button" class = "btn btn-outline-light button_team">всч команда</a>
+          <a href = "#FooterApp" role = "button" class = "btn btn-outline-light button_team">вся команда</a>
         </div>
       </div>
     </div>
@@ -119,7 +119,7 @@
   {
     .ots1, .ots2, .ots3, .ots4, .ots5
     {
-      margin-left: 300px;
+      margin-left: 200px;
     }
   }
   
@@ -127,7 +127,7 @@
   {
     .ots1, .ots2, .ots3, .ots4, .ots5
     {
-      margin-left: 160px;
+      margin-left: 110px;
     }
   }
   
@@ -135,7 +135,7 @@
   {
     .ots1, .ots2, .ots3, .ots4, .ots5
     {
-      margin-left: 130px;
+      margin-left: 100px;
     }
   }
   
@@ -151,7 +151,7 @@
   {
     .ots1, .ots2, .ots3, .ots4, .ots5
     {
-      margin-left: 20px;
+      margin-left: 10px;
     }
   }
   
