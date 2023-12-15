@@ -3,6 +3,7 @@
   <CompetensiesComponent></CompetensiesComponent>
   <SupportComponent></SupportComponent>
   <RatesComponent></RatesComponent>
+  <TimeComponent></TimeComponent>
 </template>
 
 <script>
@@ -10,13 +11,15 @@ import HeaderComponent from '@/components/HeaderComponent.vue'
 import CompetensiesComponent from '@/components/Competensies.vue'
 import SupportComponent from '@/components/Support.vue'
 import RatesComponent from '@/components/RatesComponent.vue'
+import TimeComponent from './components/TimeComponent.vue'
 export default {
   name: 'App',
   components: {
     HeaderComponent,
     CompetensiesComponent,
-    SupportComponent
-    RatesComponent
+    SupportComponent,
+    RatesComponent,
+    TimeComponent
   }
 }
 </script>
