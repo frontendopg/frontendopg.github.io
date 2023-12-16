@@ -13,11 +13,11 @@
               <img class = "img-fluid" src = "../assets/img/drupal-coder.svg" alt = "drupal-coder" width = "200" height = "35"/>
             </a>
           </div>
-          <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarToggler" aria-controls = "navbarToggler" aria-expanded = "false" aria-label = "Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class = "navbar-toggler-icon"></span>
           </button>
-          <div class = "justify-content-center navbar-collapse collapse" id = "navbarToggler">
-            <ul class = "navbar-nav">
+          <div class = "navbar-collapse collapse" id = "navbarToggler">
+            <ul class = "navbar-nav ml-auto">
               <li class = "nav-item">
                 <a class = "active nav-link text-light navbar-effect" aria-current = "page" href = "#">Поддержка Drupal</a>
               </li>
@@ -119,14 +119,13 @@
     .ddmenu
     {
       display: flex;
+      justify-content: center;
     }
   
     .ddmenu li
     {
-      width: 200px;
       list-style: none;
       background: none;
-      position: relative;
     }
   
     .ddmenu a
@@ -135,9 +134,6 @@
       text-decoration: none;
       display: block;
       text-align: center;
-      padding: 0 10px;
-      height: 40px;
-      line-height: 40px;
       transition: all .5s;
     }
   
