@@ -5,6 +5,7 @@
   <RatesComponent></RatesComponent>
   <TimeComponent></TimeComponent>
   <TeamComponent></TeamComponent>
+  <SliderComponent></SliderComponent>
 </template>
 
 <script>
@@ -14,6 +15,7 @@ import SupportComponent from '@/components/Support.vue'
 import RatesComponent from '@/components/RatesComponent.vue'
 import TimeComponent from './components/TimeComponent.vue'
 import TeamComponent from '@/components/Team.vue'
+import SliderComponent from '@/components/SliderComponent.vue'
 export default {
   name: 'App',
   components: {
@@ -22,7 +24,8 @@ export default {
     SupportComponent,
     RatesComponent,
     TimeComponent,
-    TeamComponent
+    TeamComponent,
+    SliderComponent
   }
 }
 </script>
