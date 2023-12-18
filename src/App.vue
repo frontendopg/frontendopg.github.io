@@ -7,6 +7,7 @@
   <TeamComponent></TeamComponent>
   <CaseComponent></CaseComponent>
   <SliderComponent></SliderComponent>
+  <CollabsComponent></CollabsComponent>
 </template>
 
 <script>
@@ -18,6 +19,7 @@ import TimeComponent from './components/TimeComponent.vue'
 import TeamComponent from '@/components/Team.vue'
 import CaseComponent from './components/CaseComponent.vue'
 import SliderComponent from '@/components/SliderComponent.vue'
+import CollabsComponent from '@/components/CollabsComponent.vue'
 export default {
   name: 'App',
   components: {
@@ -28,7 +30,8 @@ export default {
     TimeComponent,
     TeamComponent,
     CaseComponent,
-    SliderComponent
+    SliderComponent,
+    CollabsComponent
   }
 }
 </script>
