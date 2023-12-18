@@ -29,6 +29,7 @@ export default {
     TeamComponent,
     CaseComponent,
     SliderComponent
+  }
 }
 </script>
 
