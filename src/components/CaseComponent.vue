@@ -179,8 +179,9 @@
                     <div class="inverse view view-blog view-id-blog view-display-id-block_1">
                         <div class="view-content">
                             <article about="#" class="blog keys-1">
-                                <div class="keys-wrapper" style="background-image: url('@/assets/img/img_noyt1.jpg');">
-                                    <div class="keys-img" style="background-image: url('@/assets/img/img_noyt1.jpg');"></div>
+                                <div class="keys-wrapper" :style="{'background-image': 'url(' + require('../assets/img/img_noyt1.jpg') + ')'}">
+
+                                    <div class="keys-img" :style="{'background-image': 'url(' + require('../assets/img/img_noyt1.jpg') + ')'}"></div>
                                     <div class="keys-header">
                                         <h2>
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
@@ -197,7 +198,7 @@
                             </article>
 
                             <article about="#" class="blog is-promoted is-sticky keys-2">
-                                <div class="keys-wrapper" style="background-image: url('@/assets/img/img_noyt3.jpg');">
+                                <div class="keys-wrapper" style="background-image: url('~@/src/assets/img/img_noyt3.jpg');">
                                     <div class="keys-header">
                                         <h2>
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span>
@@ -209,8 +210,8 @@
 
                             <article data-history-node-id="263" about="#"
                                 class="blog is-promoted keys-1">
-                                <div class="keys-wrapper" style="background-image: url('/assets/img/img_noyt4.jpg');">
-                                    <div class="keys-img" style="background-image: url('/assets/img/img_case4.jpg');"></div>
+                                <div class="keys-wrapper" style="background-image: url('./src/assets/img/img_noyt4.jpg');">
+                                    <div class="keys-img" style="background-image: url('./src/assets/img/img_case4.jpg');"></div>
                                     <div class="keys-header">
                                         <h2>
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
@@ -222,8 +223,8 @@
 
 
                             <article about="#" class="blog is-promoted keys-1">
-                                <div class="keys-wrapper" style="background-image: url(../assets/img/img_case3.jpg);">
-                                    <div class="keys-img" style="background-image: url(../assets/img/img_case3.jpg);"></div>
+                                <div class="keys-wrapper" style="background-image: url('~@/src/assets/img/img_case3.jpg');">
+                                    <div class="keys-img" style="background-image: url('~@/src/assets/img/img_case3.jpg');"></div>
                                     <div class="keys-header">
                                         <h2>
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
@@ -235,8 +236,8 @@
 
 
                             <article about="#" class="blog is-promoted keys-1 clearfix">
-                                <div class="keys-wrapper" style="background-image: url(../assets/img/img_noyt4.jpg);">
-                                    <div class="keys-img" style="background-image: url(../assets/img/img_noyt4.jpg);"></div>
+                                <div class="keys-wrapper" style="background-image: url('~@/src/assets/img/img_noyt4.jpg');">
+                                    <div class="keys-img" style="background-image: url('~@/src/assets/img/img_noyt4.jpg');"></div>
                                     <div class="keys-header">
                                         <h2>
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета </span>
@@ -256,7 +257,7 @@
                             </article>
 
                             <article about="#" class="blog is-promoted keys-2 clearfix">
-                                <div class="keys-wrapper" style="background-image: url(../assets/img/img_case2.jpg);">
+                                <div class="keys-wrapper" style="background-image: url('~@/src/assets/img/img_case2.jpg');">
                                     <div class="keys-header">
                                         <h2>
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span>
@@ -267,9 +268,9 @@
                             </article>
 
                             <article about="#" class="blog is-promoted keys-1 clearfix">
-                                <div class="keys-wrapper" style="background-image: url(../assets/img/img_case2.jpg);">
+                                <div class="keys-wrapper" style="background-image: url('~@/src/assets/img/img_case2.jpg');">
 
-                                    <div class="keys-img" style="background-image: url(../assets/img/img_case2.jpg);"></div>
+                                    <div class="keys-img" style="background-image: url('~@/src/assets/img/img_case2.jpg');"></div>
                                     <div class="keys-header">
                                         <h2>
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
@@ -410,7 +411,7 @@ line-height: 1.25;
 
 .blog.keys-1 .keys-content,
 .blog.keys-1 .keys-img {
-/* display: none; */
+ display: none; 
 }
 
 .inverse .blog.keys-1:nth-of-type(4n+1) .keys-wrapper {
@@ -423,7 +424,7 @@ display: none;
 
 .inverse .blog.keys-1:nth-of-type(4n+1) .keys-content,
 .inverse .blog.keys-1:nth-of-type(4n+1) .keys-img {
-/* display: block; */
+ display: block;
 }
 
 .inverse .blog.keys-1:nth-of-type(4n+1) .keys-header {
