@@ -10,8 +10,9 @@
       :modules="modules"
       class="mySwiper"
     >
-      <swiper-slide>Slide 1</swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/1.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
       <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
       <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
       <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
@@ -72,17 +73,18 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-
+  height: 80px;
+  width: 300px;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
