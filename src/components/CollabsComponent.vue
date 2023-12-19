@@ -1,4 +1,10 @@
 <template>
+    <div class = "container-fluid" style = "margin-top: 200px">
+    <div class = "text-center">
+      <h1>С нами работают</h1>
+      <p class = "text-center">Десятки компаний доверяют нам самое ценное, что у них есть в интренете - свои сайты.</p>
+      <p class = "text-center">Мы делаем всё, чтобы наше сотрудничество было долгим.</p>
+    </div>
     <swiper
       :slidesPerView="5"
       :spaceBetween="30"
@@ -10,12 +16,15 @@
       :modules="modules"
       class="mySwiper"
     >
-      <swiper-slide><img src="../assets/img/rings/1.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
       <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
       <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
-      <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-      <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-      <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/4.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/5.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/6.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/7.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/8.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/9.jpg"></swiper-slide>
     </swiper>
 
     <swiper
@@ -30,12 +39,18 @@
       :modules="modules"
       class="mySwiper"
     >
-      <swiper-slide>Slide 1</swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
-      <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-      <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-      <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/4.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/5.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/6.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/7.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/8.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/9.jpg"></swiper-slide>
     </swiper>
+    </div>
+
   </template>
   <script>
     // Import Swiper Vue.js components
@@ -65,6 +80,7 @@
   </script>
 <style>
 .swiper {
+    margin-bottom: 1% ;
   width: 100%;
   height: 100%;
 }
@@ -73,19 +89,20 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-  height: 80px;
-  width: 300px;
+  max-width: 300px;
+  height: 100px;
+  border: 1px solid #a1a1a1 !important;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  
 }
 
 .swiper-slide img {
-  height: 100%;
   width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 
 .swiper-slide {
