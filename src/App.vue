@@ -8,6 +8,7 @@
   <CaseComponent></CaseComponent>
   <SliderComponent></SliderComponent>
   <CollabsComponent></CollabsComponent>
+  <FAQComponent></FAQComponent>
   <FooterComponent></FooterComponent>
 </template>
 
@@ -21,6 +22,7 @@ import TeamComponent from '@/components/Team.vue'
 import CaseComponent from './components/CaseComponent.vue'
 import SliderComponent from '@/components/SliderComponent.vue'
 import CollabsComponent from '@/components/CollabsComponent.vue'
+import FAQComponent from '@/components/FAQComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
 export default {
   name: 'App',
@@ -34,6 +36,7 @@ export default {
     CaseComponent,
     SliderComponent,
     CollabsComponent,
+    FAQComponent,
     FooterComponent
   }
 }
