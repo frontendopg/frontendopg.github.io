@@ -1,0 +1,121 @@
+<template>
+    <div class = "container-fluid" style = "margin-top: 200px">
+    <div class = "text-center">
+      <h1>С нами работают</h1>
+      <p class = "text-center">Десятки компаний доверяют нам самое ценное, что у них есть в интренете - свои сайты.</p>
+      <p class = "text-center">Мы делаем всё, чтобы наше сотрудничество было долгим.</p>
+    </div>
+    <swiper
+      :slidesPerView="5"
+      :spaceBetween="30"
+      :loop="true"
+      :autoplay="{
+      delay: 2500,
+      disableOnInteraction: false,
+       }"
+      :modules="modules"
+      class="mySwiper"
+    >
+      <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/4.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/5.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/6.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/7.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/8.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/9.jpg"></swiper-slide>
+    </swiper>
+
+    <swiper
+      :slidesPerView="4"
+      :spaceBetween="30"
+      :loop="true"
+      :autoplay="{
+      delay: 3000,
+      disableOnInteraction: false,
+      reverseDirection: true,
+        }"
+      :modules="modules"
+      class="mySwiper"
+    >
+      <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/4.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/5.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/6.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/7.png"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/8.jpg"></swiper-slide>
+      <swiper-slide><img src="../assets/img/rings/9.jpg"></swiper-slide>
+    </swiper>
+    </div>
+
+  </template>
+  <script>
+    // Import Swiper Vue.js components
+    import { Swiper, SwiperSlide } from 'swiper/vue';
+  
+    // Import Swiper styles
+    import 'swiper/css';
+  
+    import 'swiper/css/pagination';
+  
+  
+    // import required modules
+    import { Autoplay,Pagination } from 'swiper/modules';
+  
+    export default {
+    name: "CollabsComponent",
+        components: {
+        Swiper,
+        SwiperSlide,
+      },
+      setup() {
+        return {
+          modules: [Autoplay, Pagination],
+        };
+      },
+    };
+  </script>
+<style>
+.swiper {
+    margin-bottom: 1% ;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  max-width: 300px;
+  height: 100px;
+  border: 1px solid #a1a1a1 !important;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
+}
+
+</style>
+  

@@ -10,49 +10,49 @@
           <div class = "row competencies-row justify-content-center row-flex">
             <div class = "col-6 col-sm-3">
               <div class = "competency mb-3">
-                <div class = "competency-wrapper">
+                <div class = "competency-wrapper row justify-content-center">
                   <div class = "competency-header">
                     <div class = "competency-icon">
-                      <div class = "container">
+                      <div class = "d-flex align-items-center justify-content-center">
                         <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute OpacityLogo"/>
-                        <img src = "../assets/img/competency-20.svg" alt = "competency-20" class = "img-responsive position-relative" style = "margin-left: 3em"/>
+                        <img src = "../assets/img/competency-20.svg" alt = "competency-20" class = "img-responsive position-relative">
                       </div>
                     </div>
                   </div>
-                  <h1 style = "margin-left: 1.5em">от 1ч</h1>
-                  <div class = "BodyCompetency col-8" style = "margin-left: 3em">Настройка события GA в интернет-магазине</div>
+                  <h1>от 1ч</h1>
+                  <div class = "BodyCompetency  justify-content-center col-8">Настройка события GA в интернет-магазине</div>
                 </div>
               </div>
             </div>
             <div class = "col-6 col-sm-3">
               <div class = "competency mb-3">
-                <div class = "competency-wrapper">
+                <div class = "competency-wrapper row justify-content-center">
                   <div class = "competency-header">
                     <div class = "competency-icon">
-                      <div class = "container">
+                      <div class = "d-flex align-items-center justify-content-center">
                         <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute OpacityLogo"/>
-                        <img src = "../assets/img/competency-21.svg" alt = "competency-21" class = "img-responsive position-relative" style = "margin-left: 3em"/>
+                        <img src = "../assets/img/competency-21.svg" alt = "competency-21" class = "img-responsive position-relative">
                       </div>
                     </div>
                   </div>
-                  <h1 style = "margin-left: 1.5em">от 20ч</h1>
-                  <div class = "BodyCompetency col-8" style = "margin-left: 3em">Разработка мобильной версии сайта</div>
-                </div>
+                  <h1>от 20ч</h1>
+                  <div class = "BodyCompetency justify-content-center col-8" >Разработка мобильной версии сайта</div>
+                </div> 
               </div>
             </div>
             <div class = "col-6 col-sm-3">
               <div class = "competency mb-3">
-                <div class = "competency-wrapper">
+                <div class = "competency-wrapper row justify-content-center">
                   <div class = "competency-header">
                     <div class = "competency-icon">
-                      <div class = "container">
+                      <div class = "d-flex align-items-center justify-content-center">
                         <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute OpacityLogo"/>
-                        <img src = "../assets/img/competency-22.svg" alt = "competency-22" class = "img-responsive position-relative" style = "margin-left: 3em"/>
+                        <img src = "../assets/img/competency-22.svg" alt = "competency-22" class = "img-responsive position-relative">
                       </div>
                     </div>
                   </div>
-                  <h1 style = "margin-left: 1.5em">от 8ч</h1>
-                  <div class = "BodyCompetency col-6" style = "margin-left: 3em">Интеграция модуля оплаты</div>
+                  <h1>от 8ч</h1>
+                  <div class = "BodyCompetency justify-content-center col-8">Интеграция модуля оплаты</div>
                 </div>
               </div>
             </div>
@@ -89,8 +89,8 @@
   }
   .OpacityLogo{
     opacity: 15%;
-    width: 8%;
-    height: 8%;
+    width: 10%;
+    height: 10%;
   }
   .TitleCompetency
   {

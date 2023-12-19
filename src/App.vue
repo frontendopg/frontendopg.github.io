@@ -5,15 +5,23 @@
   <RatesComponent></RatesComponent>
   <TimeComponent></TimeComponent>
   <TeamComponent></TeamComponent>
+  <CaseComponent></CaseComponent>
+  <SliderComponent></SliderComponent>
+  <CollabsComponent></CollabsComponent>
 </template>
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import CompetensiesComponent from '@/components/CompetensiesComponent.vue'
 import SupportComponent from '@/components/SupportComponent.vue'
+import CompetensiesComponent from '@/components/Competensies.vue'
+import SupportComponent from '@/components/Support.vue'
 import RatesComponent from '@/components/RatesComponent.vue'
 import TimeComponent from './components/TimeComponent.vue'
 import TeamComponent from '@/components/TeamComponent.vue'
+import CaseComponent from './components/CaseComponent.vue'
+import SliderComponent from '@/components/SliderComponent.vue'
+import CollabsComponent from '@/components/CollabsComponent.vue'
 export default {
   name: 'App',
   components: {
@@ -22,7 +30,10 @@ export default {
     SupportComponent,
     RatesComponent,
     TimeComponent,
-    TeamComponent
+    TeamComponent,
+    CaseComponent,
+    SliderComponent,
+    CollabsComponent
   }
 }
 </script>
