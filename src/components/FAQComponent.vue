@@ -356,22 +356,31 @@
   </template>
   
   <script>
+  import {$,jQuery} from 'jquery';
   export default {
     name: "FAQComponent"
   }
+  $('.accordion-button').on('click', function(e){
+      e.preventDefault();
+      $(this).toggleClass('myClickState');
+    });
   </script>
   
   <style scoped>
+  .myClickState{
+    border-color: #e04331;
+  }
   .faq{
     position: relative;
     margin-bottom: 50px;
+    margin-top: 80px;
   }
   .label1 {
     position: relative;
     font-weight: bold;
     font-size: 24px;
     color: #09113d;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .accordion-button {
     display: flex;
@@ -383,10 +392,15 @@
     color: #09113d;
     line-height: 1;
     transition: color 0.3s;
+    outline: 5px solid #9E8463;
+    outline-offset: 5px;
+    background-color: #FBE2A9;
+  border: 5px solid #FFD18F;
+  outline: 5px solid transparent;
+    border: 3px solid transparent;
   }
   .accordion-item {
     transition: border-color 0.35s;
-    border: 3px solid transparent;
     border-radius: 0;
     padding-bottom: 10px;
   }
