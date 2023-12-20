@@ -10,23 +10,22 @@
   <CollabsComponent></CollabsComponent>
   <FAQComponent></FAQComponent>
   <FooterComponent></FooterComponent>
+  <CaseComponent2></CaseComponent2>
 </template>
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import CompetensiesComponent from '@/components/CompetensiesComponent.vue'
 import SupportComponent from '@/components/SupportComponent.vue'
-import CompetensiesComponent from '@/components/Competensies.vue'
-import SupportComponent from '@/components/Support.vue'
 import RatesComponent from '@/components/RatesComponent.vue'
 import TimeComponent from './components/TimeComponent.vue'
 import TeamComponent from '@/components/TeamComponent.vue'
 import CaseComponent from './components/CaseComponent.vue'
 import SliderComponent from '@/components/SliderComponent.vue'
 import CollabsComponent from '@/components/CollabsComponent.vue'
-import CollabsComponent from '@/components/CollabsComponent.vue'
 import FAQComponent from '@/components/FAQComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
+import CaseComponent2 from './components/CaseComponent2.vue'
 export default {
   name: 'App',
   components: {
@@ -40,7 +39,8 @@ export default {
     SliderComponent,
     CollabsComponent,
     FAQComponent,
-    FooterComponent
+    FooterComponent,
+    CaseComponent2
   }
 }
 </script>
