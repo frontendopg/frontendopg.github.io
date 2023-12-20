@@ -41,7 +41,7 @@
                   </label><br/>
                 </div>
                 <div class = "col-12">
-                  <label class = "text-light form-group">
+                  <label class = "text-light form-group text-checkbox">
                     <input type = "checkbox" id = "CB" name = "Agreement" class = "info">
                     Отправляя заявку, я даю согласие на
                     <a class = "form-politics" href = "" rel = "nofollow">обработку своих персональных данных. *</a>
@@ -53,7 +53,8 @@
               </div>
             </form>
           </div>
-          </div>
+        </div>
+        <hr>
           <div class="col-12 footer+">
             <div class="row">
               <div class="col-md-6 col-12">
@@ -104,12 +105,18 @@
   {
     color: #e5e5e5;
     margin-bottom: 1em;
+    text-align: left;
   }
   
   .text_
   {
     color: #e5e5e5;
+    text-align: left;
     margin-bottom: 5em;
+  }
+  .text-checkbox, .footerText
+  {
+    text-align: left;
   }
   .footer_region
   {
@@ -199,5 +206,12 @@
     line-height: 17px;
     color: #ffffff;
     opacity: 0.5;
+  }
+  hr
+  {
+    position: absolute;
+    width: 100%;
+    border-top: 2px solid grey;
+    left: 0;
   }
   </style>
