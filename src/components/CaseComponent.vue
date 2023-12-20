@@ -12,7 +12,7 @@
                 <h2>
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
                                         </h2>
-                <div class="keys-date">22.04.2019</div>
+                <div class="keys-date">24.12.2023</div>
               </div>
               <div class="keys-content">
                 <div class="field field--name-body  field--label-hidden field--item">
@@ -40,7 +40,7 @@
                 <h2>
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
                                         </h2>
-                <div class="keys-date">22.04.2019</div>
+                <div class="keys-date">24.12.2023</div>
               </div>
             </div>
           </article>
@@ -52,7 +52,7 @@
                 <h2>
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
                                         </h2>
-                <div class="keys-date">22.04.20</div>
+                <div class="keys-date">24.12.2023</div>
               </div>
             </div>
           </article>
@@ -66,7 +66,7 @@
                                             </a>
                                         </h2>
                 <div class="keys-date">
-                  22.04.2019
+                  24.12.2023
                 </div>
               </div>
               <div class="keys-content">
@@ -97,7 +97,7 @@
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
                                         </h2>
                 <div class="keys-date">
-                  22.04.2019
+                  24.12.2023
                 </div>
               </div>
             </div>
@@ -196,6 +196,7 @@
         margin-top: auto;
         position: relative;
         z-index: 10;
+        text-decoration: none;
     }
     .keys-header h2 {
         font-weight: bold;
@@ -249,6 +250,7 @@
     }
     .inverse .blog.keys-1:nth-of-type(4n+1) .keys-header {
         margin-top: 40px;
+        text-decoration: none;
     }
     .inverse .blog.keys-1:nth-of-type(4n+1) .keys-header h2 a {
         color: #050c33;
