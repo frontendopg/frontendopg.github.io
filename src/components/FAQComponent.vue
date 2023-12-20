@@ -9,7 +9,7 @@
         <div class="col-md-12">
           <div class="row">
             <div class="accordion" id="">
-              <div class="accordion-item opened">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="">
                   <button
                       class="accordion-button"
@@ -356,15 +356,30 @@
   </template>
   
   <script>
-  import {$,jQuery} from 'jquery';
-  export default {
-    name: "FAQComponent"
-  }
-  $('.accordion-button').on('click', function(e){
-      e.preventDefault();
-      $(this).toggleClass('myClickState');
+export default {
+  name: "FAQComponent",
+  mounted() {
+    const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach((item) => {
+  const button = item.querySelector(".accordion-button");
+
+  button.addEventListener("click", () => {
+    accordionItems.forEach((item) => {
+      item.classList.remove("border");
     });
-  </script>
+
+    const isExpanded = button.getAttribute("aria-expanded");
+    if (isExpanded === "true") {
+      item.classList.add("border");
+    }
+  });
+});
+  },
+};
+
+
+</script>
   
   <style scoped>
   .myClickState{
@@ -392,17 +407,14 @@
     color: #09113d;
     line-height: 1;
     transition: color 0.3s;
-    outline: 5px solid #9E8463;
-    outline-offset: 5px;
-    background-color: #FBE2A9;
-  border: 5px solid #FFD18F;
-  outline: 5px solid transparent;
-    border: 3px solid transparent;
   }
   .accordion-item {
     transition: border-color 0.35s;
     border-radius: 0;
     padding-bottom: 10px;
+  }
+  .accordion-item.border {
+    border: 4px solid #e04331 !important;
   }
   .accordion-body {
     font-weight: 500;
@@ -452,8 +464,8 @@
     border-color: transparent;
     transition: border-color 0.35s;
   }
-  .accordion-item.opened:not(:first-of-type) {
-    border: 3px solid #e04331;
+  .accordion-item.border:not(:first-of-type) {
+    border: 4px solid #e04331;
   }
   @media (min-width: 767px){
     .accordion-body {
