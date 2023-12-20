@@ -17,6 +17,42 @@
                 <a class = "text-light email" href = "">info@drupal-coder.ru</a>
               </div>
             </div>
+            <div class = "col-11 col-md-5 mx-auto">
+            <form id = "Form" action = "https://formcarry.com/s/b_pRIT1yrl" method = "POST" enctype = "multipart/form-data" accept-charset = "UTF-8">
+              <div class = "form-row" style = "margin-left: 4em ">
+                <div class = "col-12">
+                  <label class = "text-light form-group"><br/>
+                    <input class = "form-control form-control-md info" type = "text" id = "Name" name = "lastName" placeholder = "Ваше имя" autocomplete = "off">
+                  </label><br/>
+                </div>
+                <div class = "col-12">
+                  <label class = "text-light form-group"><br/>
+                    <input class = "form-control form-control-md info" type = "text" id = "Phone" name = "userPhone" placeholder = "Телефон" autocomplete = "off">
+                  </label><br/>
+                </div>
+                <div class = "col-12">
+                  <label class = "text-light form-group"><br/>
+                    <input class = "form-control form-control-md info" type = "email" id = "Email" name = "userEmail" placeholder = "E-mail" autocomplete = "off">
+                  </label><br/>
+                </div>
+                <div class = "col-12">
+                  <label class = "form-group"><br/>
+                    <textarea class = "form-control form-control-md info" name = "userMsg" id = "Text" placeholder = "Ваш комментарий" autocomplete = "off"></textarea>
+                  </label><br/>
+                </div>
+                <div class = "col-12">
+                  <label class = "text-light form-group">
+                    <input type = "checkbox" id = "CB" name = "Agreement" class = "info">
+                    Отправляя заявку, я даю согласие на
+                    <a class = "form-politics" href = "" rel = "nofollow">обработку своих персональных данных. *</a>
+                  </label><br/>
+                </div>
+                <div class = "col-12 mt-3">
+                  <button class = "btn btn-footer" type="submit" id = "Button" >Свяжитесь с нами!</button>
+                </div>
+              </div>
+            </form>
+          </div>
           </div>
           <div class="col-12 footer+">
             <div class="row">
@@ -103,6 +139,42 @@
     display: inline-block;
     margin-right: 10px;
   }
+  .form-politics
+{
+  color: #ef4c35;
+}
+.form-control::placeholder {
+  color: rgb(206, 206, 206);
+}
+.btn-footer
+{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 1em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-radius: 6px;
+  background: #ef4c35;
+  transition: 0.2s;
+  width: 100%;
+}
+
+.phone, .email
+{
+  font-size:25px;
+}
+
+.form-group
+{
+  width: 100%;
+}
+
+.info
+{
+  background: transparent;
+}
   .emblems-list {
     list-style: none;
     display: flex;
