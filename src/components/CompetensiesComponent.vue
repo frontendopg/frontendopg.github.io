@@ -3,7 +3,7 @@
       <div class = "competencies">
         <div class = "container">
           <div class = "row">
-            <div class = "col-md-6">
+            <div class = "col-md-7">
               <h1 class = "competency-title">13 лет совершенствуем компетенции в Друпал поддержке!</h1>
               <div class = "competencies-description">Разрабатываем и оптимизируем модули, расширяем функциональность сайтов, обновляем дизайн</div>
             </div>
@@ -161,21 +161,24 @@
   {
     font-size: 42px;
     font-weight: 1000;
+    text-align: left;
     margin-bottom: 20px;
   }
   
   .competencies-description
   {
+    text-align: left;
     margin-bottom: 55px;
   }
   .logoForOpacity{
-    opacity: 15%;
-    width: 8%;
-    height: 8%
+    opacity: 11%;
+    max-width: 148px;
+    max-height: 65px;
   }
   .competency-body
   {
     font-size: 15px;
+    text-align: left;
     margin-top: 20px;
   }
   </style>

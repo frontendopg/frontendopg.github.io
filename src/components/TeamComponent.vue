@@ -159,6 +159,10 @@
     {
       margin-top: 20px;
       font-size: 20px;
+      font-weight: bold;
+      text-align: left;
+      max-width: 280px;
+      padding: 0;
     }
   
     .button_team
@@ -190,6 +194,7 @@
     .competency-body
     {
       font-size: 15px;
-      margin-top: 20px;
+      text-align: left;
+      max-width: 304px;
     }
   </style>

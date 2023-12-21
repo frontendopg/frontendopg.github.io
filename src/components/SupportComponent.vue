@@ -109,8 +109,8 @@
           <div class = "col-0 col-md-6"></div>
           <div class = "col-12 col-md-6">
             <div class = "row">
-              <div class = "col-md-6">
-                <h2>Экспертиза в Drupal, опыт 14 лет!</h2>
+              <div class = "col-md-10">
+                <h2 class="subtitle">Экспертиза в Drupal, опыт 14 лет!</h2>
               </div>
             </div>
             <div class = "row">
@@ -187,6 +187,7 @@
     .serv-num
     {
       font-size: 12px;
+      text-align: left;
       color: rgb(160, 160, 160);
       font-weight: bold;
       margin-bottom: 10px;
@@ -196,6 +197,7 @@
     {
       font-size: 20px;
       font-weight: bold;
+      text-align: left;
       margin-bottom: 10px;
     }
   
@@ -205,6 +207,7 @@
       color: rgb(96, 101, 114);
       line-height: 1.5;
       font-size: 16px;
+      text-align: left;
       z-index: 10;
     }
   
@@ -269,7 +272,10 @@
       font-weight: 1000;
       margin-bottom: 40px;
     }
-  
+    .subtitle
+    {
+      text-align: left;
+    }
     .experience-body
     {
       border-left: 3px solid red;
@@ -282,6 +288,7 @@
       max-width: 100%;
       font-weight: 500;
       font-size: 16px;
+      text-align: left;
       color: #c4c4c4;
     }
   

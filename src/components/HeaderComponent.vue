@@ -10,7 +10,7 @@
         <div class = "px-2 px-lg-0 container-fluid">
           <div class = "ms-0 ms-lg-4">
             <a class = "navbar-brand" href = "#">
-              <img class = "img-fluid" src = "../assets/img/drupal-coder.svg" alt = "drupal-coder" width = "200" height = "35"/>
+              <img class = "img-fluid logo" src = "../assets/img/drupal-coder.svg" alt = "drupal-coder" width = "200" height = "35"/>
             </a>
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,8 +63,8 @@
       <div class = "header-data container-fluid">
         <div class = "row d-flex" id = "header-data">
           <div class = "col-10 col-lg-5 px-3 text-start me-auto ms-4 py-5">
-            <h1 class = "text-about-main col-8">Поддержка сайтов на Drupal</h1>
-            <div class = "text-about-service col-6">Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности</div>
+            <h1 class = "text-about-main col-12">Поддержка сайтов на Drupal</h1>
+            <div class = "text-about-service col-7">Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности</div>
             <a href = "#RatesApp" class = "btn btn-outline-light btn-tariff mt-5" role = "button" style = "margin-bottom: 10em">тарифы</a>
           </div>
           <div class = "col-11 col-lg-6 me-sm-3 mx-auto mt-3 pb-5 pb-lg-0 py-5">
@@ -163,6 +163,10 @@
       width: 40%;
       height: 130%;
     }
+    .logo 
+    {
+      margin-right: 80px;
+    }
   
     .video-back
     {
@@ -226,6 +230,7 @@
       font-weight: 500;
       font-size: 14px;
       line-height: 1.25;
+      text-align: left;
       color: rgba(255, 255, 255, 0.7);
     }
   
