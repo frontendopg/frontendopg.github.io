@@ -422,6 +422,7 @@ accordionItems.forEach((item) => {
     color: #09113d;
     line-height: 1.37;
     opacity: 0.7;
+    text-align: left;
   }
   .accordion-num {
     display: block;

@@ -9,7 +9,7 @@
 
               <div class="keys-img" :style="{'background-image': 'url(' + require('../assets/img/img_noyt1.jpg') + ')'}"></div>
               <div class="keys-header">
-                <h2>
+                <h2 class="link">
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
                                         </h2>
                 <div class="keys-date">24.12.2023</div>
@@ -25,7 +25,7 @@
           <article about="#" class="blog is-promoted is-sticky keys-2">
             <div class="keys-wrapper" :style="{'background-image': 'url(' + require('../assets/img/img_noyt3.jpg') + ')'}">
               <div class="keys-header">
-                <h2>
+                <h2 class="link">
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span>
                                             </a>
                                         </h2>
@@ -37,7 +37,7 @@
             <div class="keys-wrapper" :style="{'background-image': 'url(' + require('../assets/img/img_noyt4.jpg') + ')'}">
               <div class="keys-img" :style="{'background-image': 'url(' + require('../assets/img/img_case4.jpeg') + ')'}"></div>
               <div class="keys-header">
-                <h2>
+                <h2 class="link">
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
                                         </h2>
                 <div class="keys-date">24.12.2023</div>
@@ -49,7 +49,7 @@
             <div class="keys-wrapper" :style="{'background-image': 'url(' + require('../assets/img/img_case3.jpeg') + ')'}">
               <div class="keys-img" :style="{'background-image': 'url(' + require('../assets/img/img_case3.jpeg') + ')'}"></div>
               <div class="keys-header">
-                <h2>
+                <h2 class="link">
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
                                         </h2>
                 <div class="keys-date">24.12.2023</div>
@@ -61,7 +61,7 @@
             <div class="keys-wrapper" :style="{'background-image': 'url(' + require('../assets/img/img_noyt4.jpg') + ')'}">
               <div class="keys-img" :style="{'background-image': 'url(' + require('../assets/img/img_noyt4.jpg') + ')'}"></div>
               <div class="keys-header">
-                <h2>
+                <h2 class="link">
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета </span>
                                             </a>
                                         </h2>
@@ -80,7 +80,7 @@
           <article about="#" class="blog is-promoted keys-2 clearfix">
             <div class="keys-wrapper" :style="{'background-image': 'url(' + require('../assets/img/img_case2.jpg') + ')'}">
               <div class="keys-header">
-                <h2>
+                <h2 class="link">
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span>
                                             </a>
                                         </h2>
@@ -93,7 +93,7 @@
 
               <div class="keys-img" :style="{'background-image': 'url(' + require('../assets/img/img_case2.jpg') + ')'}"></div>
               <div class="keys-header">
-                <h2>
+                <h2 class="link">
                                             <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
                                         </h2>
                 <div class="keys-date">
@@ -234,6 +234,7 @@
         opacity: .5;
         font-size: 12px;
         line-height: 1.25;
+        text-align: left;
     }
     .blog.keys-1 .keys-content, .blog.keys-1 .keys-img {
         display: none;
@@ -257,6 +258,9 @@
     }
     .inverse .blog.keys-1:nth-of-type(4n+1) .keys-date {
         color: #050c33;
+    }
+    .link, .field{
+      text-align: left;
     }
 
 </style>

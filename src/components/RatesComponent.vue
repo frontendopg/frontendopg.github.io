@@ -11,7 +11,7 @@
             <div class="col-10 col-md-4 mx-auto mt-3 price-block-wrapper price-van">
               <div class="price-block py-2 px-2 pb-3 price-standard">
                 <div class="price-header pt-2">
-                  <h2>
+                  <h2 class="subtitle">
                     Стартовый
                   </h2>
                 </div>
@@ -85,7 +85,7 @@
             <div class="col-10 col-md-4 mx-auto mt-1 price-block-wrapper price">
               <div class="price-block py-4 px-2 pb-3 price-business price-block-active">
                 <div class="price-header pt-2">
-                  <h2>
+                  <h2 class="subtitle">
                     Бизнес
                   </h2>
                 </div>
@@ -171,7 +171,7 @@
             <div class="col-10 col-md-4 mx-auto mt-3 price-block-wrapper price-billy">
               <div class="price-block py-2 px-2 pb-3 price-vip">
                 <div class="price-header pt-2">
-                  <h2>
+                  <h2 class="subtitle">
                     VIP
                   </h2>
                 </div>
@@ -286,6 +286,12 @@
     font-weight: bold;
   }
   
+  .subtitle
+  {
+    text-align: left;
+    margin-left: 20px;
+  }
+
   .price-body{
     line-height: 1.2;
     font-size: 16px;
