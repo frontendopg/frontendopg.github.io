@@ -10,7 +10,6 @@
   <CollabsComponent></CollabsComponent>
   <FAQComponent></FAQComponent>
   <FooterComponent></FooterComponent>
-  <CaseComponent2></CaseComponent2>
 </template>
 
 <script>
@@ -25,7 +24,6 @@ import SliderComponent from '@/components/SliderComponent.vue'
 import CollabsComponent from '@/components/CollabsComponent.vue'
 import FAQComponent from '@/components/FAQComponent.vue'
 import FooterComponent from '@/components/FooterComponent.vue'
-import CaseComponent2 from './components/CaseComponent2.vue'
 export default {
   name: 'App',
   components: {
@@ -39,8 +37,7 @@ export default {
     SliderComponent,
     CollabsComponent,
     FAQComponent,
-    FooterComponent,
-    CaseComponent2
+    FooterComponent
   }
 }
 </script>
