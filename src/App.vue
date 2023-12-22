@@ -39,7 +39,7 @@ export default {
     SliderComponent,
     CollabsComponent,
     FAQComponent,
-    FooterComponent
+    FooterComponent,
     CaseComponent2
   }
 }
