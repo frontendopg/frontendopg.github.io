@@ -20,9 +20,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class = "row justify-content-center">
+                  <div class = "row justify-content-center text-about-person">
                     <h1>Сергей Синица</h1>
-                    <div class = "competency-body col-sm-10">Руководитель отдела веб-разработки, канд. тех. наук, заместитель директора</div>
+                    <div class = "competency-body">Руководитель отдела веб-разработки, канд. тех. наук, заместитель директора</div>
                   </div>
                 </div>
               </div>
@@ -37,9 +37,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class = "row justify-content-center">
+                  <div class = "row justify-content-center text-about-person">
                     <h1>Роман Агабеков</h1>
-                    <div class = "competency-body col-sm-10">Руководитель отдела DevOPS, директор</div>
+                    <div class = "competency-body">Руководитель отдела DevOPS, директор</div>
                   </div>
                 </div>
               </div>
@@ -54,9 +54,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class = "row justify-content-center">
+                  <div class = "row justify-content-center text-about-person">
                     <h1>Алексей Синица</h1>
-                    <div class = "competency-body col-sm-10">Руководитель отдела поддержки сайтов</div>
+                    <div class = "competency-body">Руководитель отдела поддержки сайтов</div>
                   </div>
                 </div>
               </div>
@@ -71,9 +71,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class = "row justify-content-center">
+                  <div class = "row justify-content-center text-about-person">
                     <h1>Дарья Бочкарёва</h1>
-                    <div class = "competency-body col-sm-10">Руководитель отдела продвижения, контекстной рекламы и контент-поддержки сайтов</div>
+                    <div class = "competency-body">Руководитель отдела продвижения, контекстной рекламы и контент-поддержки сайтов</div>
                   </div>
                 </div>
               </div>
@@ -88,9 +88,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class = "row justify-content-center">
+                  <div class = "row justify-content-center text-about-person">
                     <h1>Ирина Торкунова</h1>
-                    <div class = "competency-body col-sm-10">Менеджер по работе с клиентами</div>
+                    <div class = "competency-body">Менеджер по работе с клиентами</div>
                   </div>
                 </div>
               </div>
@@ -117,41 +117,81 @@
   
   @media (max-width: 990px)
   {
+    h1
+    {
+      margin-left: 22px;
+    }
     .ots1, .ots2, .ots3, .ots4, .ots5
     {
       margin-left: 200px;
+    }
+    .competency-body
+    {
+      margin-left: 22px;
     }
   }
   
   @media (max-width: 750px)
   {
+    h1
+    {
+      margin-left: 22px;
+    }
     .ots1, .ots2, .ots3, .ots4, .ots5
     {
       margin-left: 110px;
+    }
+    .competency-body
+    {
+      margin-left: 22px;
     }
   }
   
   @media (max-width: 590px)
   {
+    h1
+    {
+      margin-left: 22px;
+    }
     .ots1, .ots2, .ots3, .ots4, .ots5
     {
       margin-left: 100px;
+    }
+    .competency-body
+    {
+      margin-left: 22px;
     }
   }
   
   @media (max-width: 375px)
   {
+    h1
+    {
+      margin-left: 22px;
+    }
     .ots1, .ots2, .ots3, .ots4, .ots5
     {
       margin-left: 10px;
+    }
+    .competency-body
+    {
+      margin-left: 22px;
     }
   }
   
   @media (max-width: 280px)
   {
+    h1
+    {
+      margin-left: 22px;
+    }
     .ots1, .ots2, .ots3, .ots4, .ots5
     {
       margin-left: 10px;
+    }
+    .competency-body
+    {
+      margin-left: 22px;
     }
   }
   
@@ -159,6 +199,10 @@
     {
       margin-top: 20px;
       font-size: 20px;
+      font-weight: bold;
+      text-align: left;
+      max-width: 280px;
+      padding: 0;
     }
   
     .button_team
@@ -173,6 +217,11 @@
     {
       text-align: center;
       margin-bottom: 50px;
+    }
+    .text-about-person
+    {
+      width: 280px;
+      margin: 0 auto;
     }
   
     .competencies
@@ -190,6 +239,8 @@
     .competency-body
     {
       font-size: 15px;
-      margin-top: 20px;
+      text-align: left;
+      max-width: 304px;
+      padding: 0;
     }
   </style>
