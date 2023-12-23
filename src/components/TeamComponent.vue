@@ -1,7 +1,7 @@
 <template>
     <div class = "competency-region container-fluid">
       <div class = "competencies">
-        <div class = "container">
+        <div class = "container main-container">
           <div class = "row">
             <div class = "team">
               <div class = "container">
@@ -10,7 +10,7 @@
             </div>
           </div>
           <div class = "row competencies-row row-flex">
-            <div class = "col-6 col-sm-4 ots1">
+            <div class = "col-md-6 col-sm-12 col-lg-4 ots1">
               <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
@@ -27,7 +27,7 @@
                 </div>
               </div>
             </div>
-            <div class = "col-6 col-sm-4 ots2">
+            <div class = "col-md-6 col-sm-12 col-lg-4 ots2">
               <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
@@ -44,7 +44,7 @@
                 </div>
               </div>
             </div>
-            <div class = "col-6 col-sm-4 ots3">
+            <div class = "col-md-6 col-sm-12 col-lg-4 ots3">
               <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
@@ -61,7 +61,7 @@
                 </div>
               </div>
             </div>
-            <div class = "col-6 col-sm-4 ots4">
+            <div class = "col-md-6 col-sm-12 col-lg-4 ots4">
               <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
@@ -78,7 +78,7 @@
                 </div>
               </div>
             </div>
-            <div class = "col-6 col-sm-4 ots5">
+            <div class = "col-md-6 col-sm-12 col-lg-4 ots5">
               <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
@@ -117,84 +117,11 @@
   
   @media (max-width: 990px)
   {
-    h1
+    .main-container
     {
-      margin-left: 22px;
-    }
-    .ots1, .ots2, .ots3, .ots4, .ots5
-    {
-      margin-left: 200px;
-    }
-    .competency-body
-    {
-      margin-left: 22px;
+      max-width: 720px;
     }
   }
-  
-  @media (max-width: 750px)
-  {
-    h1
-    {
-      margin-left: 22px;
-    }
-    .ots1, .ots2, .ots3, .ots4, .ots5
-    {
-      margin-left: 110px;
-    }
-    .competency-body
-    {
-      margin-left: 22px;
-    }
-  }
-  
-  @media (max-width: 590px)
-  {
-    h1
-    {
-      margin-left: 22px;
-    }
-    .ots1, .ots2, .ots3, .ots4, .ots5
-    {
-      margin-left: 100px;
-    }
-    .competency-body
-    {
-      margin-left: 22px;
-    }
-  }
-  
-  @media (max-width: 375px)
-  {
-    h1
-    {
-      margin-left: 22px;
-    }
-    .ots1, .ots2, .ots3, .ots4, .ots5
-    {
-      margin-left: 10px;
-    }
-    .competency-body
-    {
-      margin-left: 22px;
-    }
-  }
-  
-  @media (max-width: 280px)
-  {
-    h1
-    {
-      margin-left: 22px;
-    }
-    .ots1, .ots2, .ots3, .ots4, .ots5
-    {
-      margin-left: 10px;
-    }
-    .competency-body
-    {
-      margin-left: 22px;
-    }
-  }
-  
     h1
     {
       margin-top: 20px;
