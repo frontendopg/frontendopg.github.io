@@ -5,50 +5,93 @@
       <p class = "text-center">Десятки компаний доверяют нам самое ценное, что у них есть в интренете - свои сайты.</p>
       <p class = "text-center">Мы делаем всё, чтобы наше сотрудничество было долгим.</p>
     </div>
-    <swiper
-      :slidesPerView="5"
-      :spaceBetween="30"
-      :loop="true"
-      :autoplay="{
-      delay: 2500,
-      disableOnInteraction: false,
-       }"
-      :modules="modules"
-      class="mySwiper"
-    >
-      <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/4.jpg"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/5.png"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/6.png"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/7.png"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/8.jpg"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/9.jpg"></swiper-slide>
-    </swiper>
-
-    <swiper
-      :slidesPerView="4"
-      :spaceBetween="30"
-      :loop="true"
-      :autoplay="{
-      delay: 3000,
-      disableOnInteraction: false,
-      reverseDirection: true,
+    <div class="first-swiper">
+        <swiper
+        :observer="true"
+        :observeParents="true"
+        :slidesPerView="6"
+        :centeredSlides="true"
+        :centeredSlidesBounds="true"
+        :spaceBetween="30"
+        :freeMode="true"
+        :loop="true"
+        :autoplay="{
+        delay: 2500,
+        disableOnInteraction: false,
         }"
-      :modules="modules"
-      class="mySwiper"
-    >
-      <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/4.jpg"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/5.png"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/6.png"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/7.png"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/8.jpg"></swiper-slide>
-      <swiper-slide><img src="../assets/img/rings/9.jpg"></swiper-slide>
-    </swiper>
+        :modules="modules"
+        class="mySwiper"
+        :breakpoints="{
+            640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            },
+            768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            },
+            1024: {
+            slidesPerView: 5,
+            }
+        }"
+        >
+        <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/4.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/5.png"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/6.png"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/7.png"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/8.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/9.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
+        
+        </swiper>
+    </div>
+    <div class="second-swiper">
+        <swiper
+            :observer="true"
+            :observeParents="true"
+            :slidesPerView="5"
+            :spaceBetween="30"
+            :centeredSlides="true"
+            :centeredSlidesBounds="true"
+            :loop="true"
+            :freeMode="true"
+            :autoplay="{
+            delay: 3000,
+            disableOnInteraction: false,
+            reverseDirection: true,
+            }"
+            :modules="modules"
+            class="mySwiper"
+            :breakpoints="{
+            640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            },
+            768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            },
+            1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+            }
+        }"
+        >
+            <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/4.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/5.png"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/6.png"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/7.png"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/8.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/9.jpg"></swiper-slide>
+        </swiper>
+    </div>
     </div>
 
   </template>
@@ -89,7 +132,7 @@
   text-align: center;
   font-size: 18px;
   background: #fff;
-  max-width: 300px;
+  min-width: 20%;
   height: 100px;
   border: 1px solid #a1a1a1 !important;
   /* Center slide text vertically */
@@ -105,9 +148,6 @@
   object-fit: contain;
 }
 
-.swiper-slide {
-  width: 80%;
-}
 
 .swiper-slide:nth-child(2n) {
   width: 60%;
