@@ -9,7 +9,7 @@
         <div class="col-md-12">
           <div class="row">
             <div class="accordion" id="">
-              <div class="accordion-item opened">
+              <div class="accordion-item">
                 <h2 class="accordion-header" id="">
                   <button
                       class="accordion-button"
@@ -356,22 +356,46 @@
   </template>
   
   <script>
-  export default {
-    name: "FAQComponent"
-  }
-  </script>
+export default {
+  name: "FAQComponent",
+  mounted() {
+    const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach((item) => {
+  const button = item.querySelector(".accordion-button");
+
+  button.addEventListener("click", () => {
+    accordionItems.forEach((item) => {
+      item.classList.remove("border");
+    });
+
+    const isExpanded = button.getAttribute("aria-expanded");
+    if (isExpanded === "true") {
+      item.classList.add("border");
+    }
+  });
+});
+  },
+};
+
+
+</script>
   
   <style scoped>
+  .myClickState{
+    border-color: #e04331;
+  }
   .faq{
     position: relative;
     margin-bottom: 50px;
+    margin-top: 80px;
   }
   .label1 {
     position: relative;
     font-weight: bold;
     font-size: 24px;
     color: #09113d;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .accordion-button {
     display: flex;
@@ -386,9 +410,11 @@
   }
   .accordion-item {
     transition: border-color 0.35s;
-    border: 3px solid transparent;
     border-radius: 0;
     padding-bottom: 10px;
+  }
+  .accordion-item.border {
+    border: 4px solid #e04331 !important;
   }
   .accordion-body {
     font-weight: 500;
@@ -396,6 +422,7 @@
     color: #09113d;
     line-height: 1.37;
     opacity: 0.7;
+    text-align: left;
   }
   .accordion-num {
     display: block;
@@ -438,8 +465,8 @@
     border-color: transparent;
     transition: border-color 0.35s;
   }
-  .accordion-item.opened:not(:first-of-type) {
-    border: 3px solid #e04331;
+  .accordion-item.border:not(:first-of-type) {
+    border: 4px solid #e04331;
   }
   @media (min-width: 767px){
     .accordion-body {
