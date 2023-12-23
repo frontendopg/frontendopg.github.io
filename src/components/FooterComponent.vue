@@ -2,11 +2,11 @@
     <div class = "container-fluid pt-3 pb-5 pb-md-0 footer_region" id = "FooterApp">
       <div class = "footer_background"></div>
       <div class = "row d-flex mt-2 px-2">
-        <div class = "col-11 col-md-10 mx-auto px-0">
-          <div class = "row">
-            <div class = "col-11 col-md-5 mx-auto">
+        <div class = "col-12 col-md-10 mx-auto px-0">
+          <div class = "row" style="margin-bottom: 40px;">
+            <div class = "col-12 col-md-5 mx-auto form-text">
               <h1>Оставить заявку на поддержку сайта</h1>
-              <p class = "col-10 text_">
+              <p class = "col-12 text_">
                 Срочно нужна поддержка сайта? Ваша команда не успевает справиться самостоятельно или предыдущий подрядчик не справился с работой?
                 Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!
               </p>
@@ -17,9 +17,9 @@
                 <a class = "text-light email" href = "">info@drupal-coder.ru</a>
               </div>
             </div>
-            <div class = "col-11 col-md-5 mx-auto">
+            <div class = "col-12 col-md-5 mx-auto form-form">
             <form id = "Form" action = "https://formcarry.com/s/b_pRIT1yrl" method = "POST" enctype = "multipart/form-data" accept-charset = "UTF-8">
-              <div class = "form-row" style = "margin-left: 4em ">
+              <div class = "form-row">
                 <div class = "col-12">
                   <label class = "text-light form-group"><br/>
                     <input class = "form-control form-control-md info" type = "text" id = "Name" name = "lastName" placeholder = "Ваше имя" autocomplete = "off">
@@ -60,7 +60,7 @@
               <div class="col-md-6 col-12">
                 <div class="row">
                   <div class="emblems-block">
-                    <ul class="emblems-list">
+                    <ul class="emblems-list" style="margin-top: 40px;">
                       <li class="emblems-list-item">
                         <a href="#"><img src="../assets/img/facebook.svg" alt=""/></a>
                       </li>
@@ -168,6 +168,11 @@
   width: 100%;
 }
 
+.form-row
+{
+  margin-left: 4em;
+}
+
 .phone, .email
 {
   font-size:25px;
@@ -205,7 +210,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #ffffff;
-    opacity: 0.5;
+    opacity: 0.7;
   }
   hr
   {
@@ -214,4 +219,31 @@
     border-top: 2px solid grey;
     left: 0;
   }
+  @media (max-width: 767px)
+{
+  .form-text
+  {
+    padding: 0 24px;
+  }
+  .form-form
+  {
+    padding: 0 24px;
+  }
+  h1
+  {
+    text-align: center;
+  }
+  .text_
+  {
+    text-align: justify;
+  }
+  .form-row
+  {
+    margin-left: 0;
+  }
+  .footerText
+  {
+    font-size: 16px;
+  }
+}
   </style>
