@@ -35,16 +35,16 @@
             }
         }"
         >
-        <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/1.jpg"></swiper-slide>
         <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/3.jpg"></swiper-slide>
         <swiper-slide><img src="../assets/img/rings/4.jpg"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/5.png"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/6.png"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/7.png"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/8.jpg"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/9.jpg"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/5.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/6.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/7.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/1.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/3.jpg"></swiper-slide>
         <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
         
         </swiper>
@@ -81,15 +81,15 @@
             }
         }"
         >
-            <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/1.jpg"></swiper-slide>
             <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
-            <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/3.jpg"></swiper-slide>
             <swiper-slide><img src="../assets/img/rings/4.jpg"></swiper-slide>
-            <swiper-slide><img src="../assets/img/rings/5.png"></swiper-slide>
-            <swiper-slide><img src="../assets/img/rings/6.png"></swiper-slide>
-            <swiper-slide><img src="../assets/img/rings/7.png"></swiper-slide>
-            <swiper-slide><img src="../assets/img/rings/8.jpg"></swiper-slide>
-            <swiper-slide><img src="../assets/img/rings/9.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/5.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/6.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/7.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/1.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
         </swiper>
     </div>
     </div>
