@@ -9,19 +9,17 @@
             </div>
           </div>
           <div class = "row competencies-row row-flex">
-            <div class = "col-6 col-sm-3">
-              <div class = "competency mb-3">
-                <div class = "competency-wrapper">
-                  <div class = "competency-header">
-                    <div class = "competency-icon">
-                      <div class = "container">
-                        <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity" style = "margin-left: -3em"/>
-                        <img src = "../assets/img/competency-1.svg" alt = "competency-1" class = "img-responsive position-relative" />
-                      </div>
+            <div class = "col-6 col-md-3">
+              <div class = "competency-wrapper">
+                <div class = "competency-header">
+                  <div class = "competency-icon">
+                    <div class = "container">
+                      <img src = "../assets/img/druplar-logo.svg" alt = "druplar-logo" class = "position-absolute logoForOpacity" style = "margin-left: -3em"/>
+                      <img src = "../assets/img/competency-1.svg" alt = "competency-1" class = "img-responsive position-relative" />
                     </div>
                   </div>
-                  <div class = "competency-body col-9" style = "margin-left: 3em">Добавление информации на сайт, создание новых разделов</div>
                 </div>
+                <div class = "competency-body col-9" style = "margin-left: 3em">Добавление информации на сайт, создание новых разделов</div>
               </div>
             </div>
             <div class = "col-6 col-md-3">
