@@ -8,9 +8,9 @@
             </div>
           </div>
           <div class = "row competencies-row row-flex">
-            <div class = "col-6 col-sm-3">
+            <div class = "col-6 col-sm-4 timeBlock">
               <div class = "competency mb-3">
-                <div class = "competency-wrapper row justify-content-center">
+                <div class = "competency-wrapper row">
                   <div class = "competency-header">
                     <div class = "competency-icon">
                       <div class = "d-flex align-items-center justify-content-center">
@@ -20,13 +20,13 @@
                     </div>
                   </div>
                   <h1>от 1ч</h1>
-                  <div class = "BodyCompetency col-8">Настройка события GA в интернет-магазине</div>
+                  <div class = "BodyCompetency col-9">Настройка события GA в интернет-магазине</div>
                 </div>
               </div>
             </div>
-            <div class = "col-6 col-sm-3">
+            <div class = "col-6 col-sm-4 timeBlock">
               <div class = "competency mb-3">
-                <div class = "competency-wrapper row justify-content-center">
+                <div class = "competency-wrapper row">
                   <div class = "competency-header">
                     <div class = "competency-icon">
                       <div class = "d-flex align-items-center justify-content-center">
@@ -36,13 +36,13 @@
                     </div>
                   </div>
                   <h1>от 20ч</h1>
-                  <div class = "BodyCompetency col-8" >Разработка мобильной версии сайта</div>
+                  <div class = "BodyCompetency col-9" >Разработка мобильной версии сайта</div>
                 </div> 
               </div>
             </div>
-            <div class = "col-6 col-sm-3">
+            <div class = "col-6 col-sm-4 timeBlock">
               <div class = "competency mb-3">
-                <div class = "competency-wrapper row justify-content-center">
+                <div class = "competency-wrapper row">
                   <div class = "competency-header">
                     <div class = "competency-icon">
                       <div class = "d-flex align-items-center justify-content-center">
@@ -52,7 +52,7 @@
                     </div>
                   </div>
                   <h1>от 8ч</h1>
-                  <div class = "BodyCompetency col-8">Интеграция модуля оплаты</div>
+                  <div class = "BodyCompetency col-9">Интеграция модуля оплаты</div>
                 </div>
               </div>
             </div>
@@ -103,6 +103,25 @@
   {
     font-size: 15px;
     text-align: left;
-    margin-left: 65px;
+  }
+  .competency-wrapper
+  {
+    justify-content: end;
+  }
+  @media (max-width: 766px)
+  {
+    .timeBlock
+    {
+      width: 100%;
+    }
+    .competency-wrapper
+    {
+      justify-content: center;
+    }
+    .BodyCompetency
+  {
+    font-size: 16px;
+    width: 45%;
+  }
   }
   </style>
