@@ -10,7 +10,7 @@
             </div>
           </div>
           <div class = "row competencies-row row-flex">
-            <div class = "col-md-6 col-sm-12 col-lg-4 ots1">
+            <div class = "col-sm-6 col-xs-12 col-lg-4 ots1">
               <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
@@ -27,7 +27,7 @@
                 </div>
               </div>
             </div>
-            <div class = "col-md-6 col-sm-12 col-lg-4 ots2">
+            <div class = "col-sm-6 col-xs-12 col-lg-4 ots2">
               <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
@@ -44,7 +44,7 @@
                 </div>
               </div>
             </div>
-            <div class = "col-md-6 col-sm-12 col-lg-4 ots3">
+            <div class = "col-sm-6 col-xs-12 col-lg-4 ots3">
               <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
@@ -61,7 +61,7 @@
                 </div>
               </div>
             </div>
-            <div class = "col-md-6 col-sm-12 col-lg-4 ots4">
+            <div class = "col-sm-6 col-xs-12 col-lg-4 ots4">
               <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
@@ -78,7 +78,7 @@
                 </div>
               </div>
             </div>
-            <div class = "col-md-6 col-sm-12 col-lg-4 ots5">
+            <div class = "col-sm-6 col-xs-12 col-lg-4 ots5">
               <div class = "competency mb-3">
                 <div class = "competency-wrapper">
                   <div class = "competency-header">
@@ -120,6 +120,13 @@
     .main-container
     {
       max-width: 720px;
+    }
+  }
+  @media (max-width: 680px)
+  {
+    .ots1, .ots2, .ots3, .ots4, .ots5
+    {
+      width: 100%;
     }
   }
     h1
