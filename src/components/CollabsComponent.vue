@@ -22,12 +22,17 @@
         :modules="modules"
         class="mySwiper"
         :breakpoints="{
+            0:
+            {
+                slidesPerView:3,
+                spaceBetween:20,
+            },
             640: {
             slidesPerView: 3,
             spaceBetween: 20,
             },
             768: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 30,
             },
             1024: {
@@ -35,16 +40,16 @@
             }
         }"
         >
-        <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/1.jpg"></swiper-slide>
         <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/3.jpg"></swiper-slide>
         <swiper-slide><img src="../assets/img/rings/4.jpg"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/5.png"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/6.png"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/7.png"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/8.jpg"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/9.jpg"></swiper-slide>
-        <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/5.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/6.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/7.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/1.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
+        <swiper-slide><img src="../assets/img/rings/3.jpg"></swiper-slide>
         <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
         
         </swiper>
@@ -67,12 +72,17 @@
             :modules="modules"
             class="mySwiper"
             :breakpoints="{
+                0:
+                {
+                    slidesPerView:2,
+                    spaceBetween:20,
+                },
             640: {
             slidesPerView: 2,
             spaceBetween: 20,
             },
             768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 30,
             },
             1024: {
@@ -81,15 +91,15 @@
             }
         }"
         >
-            <swiper-slide><img src="../assets/img/rings/11.png"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/1.jpg"></swiper-slide>
             <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
-            <swiper-slide><img src="../assets/img/rings/3.jpeg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/3.jpg"></swiper-slide>
             <swiper-slide><img src="../assets/img/rings/4.jpg"></swiper-slide>
-            <swiper-slide><img src="../assets/img/rings/5.png"></swiper-slide>
-            <swiper-slide><img src="../assets/img/rings/6.png"></swiper-slide>
-            <swiper-slide><img src="../assets/img/rings/7.png"></swiper-slide>
-            <swiper-slide><img src="../assets/img/rings/8.jpg"></swiper-slide>
-            <swiper-slide><img src="../assets/img/rings/9.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/5.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/6.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/7.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/1.jpg"></swiper-slide>
+            <swiper-slide><img src="../assets/img/rings/2.jpg"></swiper-slide>
         </swiper>
     </div>
     </div>
