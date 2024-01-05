@@ -3,7 +3,7 @@
       <div class = "competencies">
         <div class = "container">
           <div class = "row justify-content-center">
-            <div class = "col-md-11 time"> 
+            <div class = "col-md-11 time row"> 
               <h1 class = "TitleCompetency">Наши профессиональные разработчики выполняют быстро любые задачи</h1>
             </div>
           </div>
@@ -79,12 +79,18 @@
   .container{
     justify-content: center;
   }
+  .TitleCompetency{
+    font-size: 20px;
+    flex-direction: row;
+  }
+  /* .BodyCompetency{
+    margin: 0;
+  } */
   }
   .time
   {
     margin-bottom: 50px;
   }
-  
   @media (max-width: 1300px)
   {
     .container
@@ -101,10 +107,22 @@
     .text{
       text-align: left;
     }
+    .TitleCompetency
+  {
+    font-size: 42px;
   }
+  h1{
+    padding-right: 85px;
+  }
+}
+@media(min-width: 940px){
+  h1{
+    padding-right: 120px;
+  }
+}
   .competencies
   {
-    padding: 80px;
+    padding: 80px 0 80px 0;
   }
   .OpacityLogo{
     opacity: 11%;
@@ -113,10 +131,10 @@
   }
   .TitleCompetency
   {
-    font-size: 42px;
     font-weight: 1000;
     text-align: left;
     margin-bottom: 20px;
+    padding: 0;
   }
   .BodyCompetency
   {
@@ -127,6 +145,9 @@
   .competency-wrapper
   {
     justify-content: end;
+  }
+  h1{
+    font-weight: 700;
   }
   @media (max-width: 766px)
   {
@@ -143,4 +164,5 @@
     font-size: 16px;
     width: 45%;
   }
+}
   </style>
