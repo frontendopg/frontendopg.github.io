@@ -41,7 +41,7 @@
               </li>
               <ul class = "ddmenu">
                 <li class = "nav-item dropdown">
-                  <a class = "nav-link dropdown-toggle text-light" href = "#" id = "navbarDropdown-2" role = "button" data-toggle = "dropdown" aria-expanded = "false">О нас</a>
+                  <a class = "nav-link dropdown-toggle text-light" href = "#" id = "navbarDropdown-2" role = "button" data-toggle = "dropdown" aria-expanded = "true">О нас</a>
                   <ul class = "dropdown-menu dropdown-menu-dark" id = "list-2" aria-labelledby = "navbarDropdown-2">
                     <li><a class = "dropdown-item text-light" href = "#">Наша команда</a></li>
                     <li><a class = "dropdown-item text-light" href = "#">Отдых</a></li>
