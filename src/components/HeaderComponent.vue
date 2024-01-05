@@ -178,10 +178,8 @@
       min-height: 100%;
       width: auto;
       height: auto;
-      z-index: -1;
       opacity: 0.15;
       filter: blur(1px);
-      transform: scale(2.04);
     }
   
     .dropdown-menu

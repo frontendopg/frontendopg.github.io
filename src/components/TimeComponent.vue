@@ -7,10 +7,10 @@
               <h1 class = "TitleCompetency">Наши профессиональные разработчики выполняют быстро любые задачи</h1>
             </div>
           </div>
-          <div class = "row competencies-row row-flex blocks">
-            <div class = "col-md-4 col-sm-12">
+          <div class = "row competencies-row row-flex">
+            <div class = "col-6 col-sm-4 timeBlock">
               <div class = "competency mb-3">
-                <div class = "competency-wrapper row justify-content-center">
+                <div class = "competency-wrapper row">
                   <div class = "competency-header">
                     <div class = "competency-icon">
                       <div class = "d-flex align-items-center col-md-7 justify-content-center">
@@ -19,14 +19,14 @@
                       </div>
                     </div>
                   </div>
-                  <h1 class="text col-9 justify-content-center">от 1ч</h1>
-                  <div class = "BodyCompetency col-sm-5 col-md-9">Настройка события GA в интернет-магазине</div>
+                  <h1>от 1ч</h1>
+                  <div class = "BodyCompetency col-9">Настройка события GA в интернет-магазине</div>
                 </div>
               </div>
             </div>
-            <div class = "col-md-4 col-sm-12">
+            <div class = "col-6 col-sm-4 timeBlock">
               <div class = "competency mb-3">
-                <div class = "competency-wrapper row justify-content-center">
+                <div class = "competency-wrapper row">
                   <div class = "competency-header">
                     <div class = "competency-icon">
                       <div class = "d-flex align-items-center col-md-8 justify-content-center">
@@ -35,14 +35,14 @@
                       </div>
                     </div>
                   </div>
-                  <h1 class="text col-8 justify-content-center">от 20ч</h1>
-                  <div class = "BodyCompetency col-sm-5 col-md-8" >Разработка мобильной версии сайта</div>
+                  <h1>от 20ч</h1>
+                  <div class = "BodyCompetency col-9" >Разработка мобильной версии сайта</div>
                 </div> 
-              </div>
             </div>
-            <div class = "col-md-4 col-sm-12">
+              </div>
+            <div class = "col-6 col-sm-4 timeBlock">
               <div class = "competency mb-3">
-                <div class = "competency-wrapper row justify-content-center">
+                <div class = "competency-wrapper row">
                   <div class = "competency-header">
                     <div class = "competency-icon">
                       <div class = "d-flex align-items-center col-md-9 justify-content-center">
@@ -51,8 +51,8 @@
                       </div>
                     </div>
                   </div>
-                  <h1 class="text col-md-7 justify-content-center">от 8ч</h1>
-                  <div class = "BodyCompetency col-sm-4 col-md-7">Интеграция модуля оплаты</div>
+                  <h1>от 8ч</h1>
+                  <div class = "BodyCompetency col-9">Интеграция модуля оплаты</div>
                 </div>
               </div>
             </div>
@@ -123,5 +123,24 @@
     font-size: 15px;
     margin: auto;
     text-align: left;
+  }
+  .competency-wrapper
+  {
+    justify-content: end;
+  }
+  @media (max-width: 766px)
+  {
+    .timeBlock
+    {
+      width: 100%;
+    }
+    .competency-wrapper
+    {
+      justify-content: center;
+    }
+    .BodyCompetency
+  {
+    font-size: 16px;
+    width: 45%;
   }
   </style>
