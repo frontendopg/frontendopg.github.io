@@ -1,5 +1,5 @@
 <template>
-    <div class = "container-fluid pt-3 pb-5 pb-md-0 footer_region" id = "FooterApp">
+    <div class = "container-fluid pt-3 pb-5 pb-md-0 footer_region" id = "Footer">
       <div class = "footer_background"></div>
       <div class = "row d-flex mt-2 px-2">
         <div class = "col-12 col-md-10 mx-auto px-0">
@@ -126,6 +126,7 @@
     background: url("../assets/img/druplar-emblem.svg") top center,
     url("../assets/img/druplar-emblem2.png") bottom right;
     background-repeat: no-repeat;
+    background-size: 20%;
   }
   
   .footer_background
@@ -244,6 +245,14 @@
   .footerText
   {
     font-size: 16px;
+  }
+  .emblems-block{
+    margin: 0;
+    padding: 0 24px;
+  }
+  .footer_region
+  {
+    background-size: 35%;
   }
 }
   </style>
