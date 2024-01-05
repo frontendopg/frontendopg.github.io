@@ -2,7 +2,7 @@
     <div class="container reviews">
       <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__blok">
-        <div class="reviews__wrapper">
+        <div class="reviews__wrapper ">
           <div class="left_blok">
             <div class="reviews__left"
                 v-for="(item, i) in infoList.length"
@@ -14,7 +14,7 @@
               </div>
             </div>
           </div>
-          <div class="right_blok">
+          <div class="right_blok ">
             <div class="reviews__right">
               <img @click="() => (counter > 0 ? counter-- : counter)"
                   class="reviews__arrow__left"
@@ -202,6 +202,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
     }
   
     .counter {
@@ -214,8 +215,21 @@
     }
   
     .right_blok {
-      width: 20%;
+      width: 100%;
+    }
+    .reviews__right
+    {
       display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .reviews__arrow__left
+    {
+      align-self: center;
+    }
+    .counter
+    {
+      text-align: center;
     }
   }
   </style>
