@@ -160,7 +160,7 @@
   
     .competencies
     {
-      padding: 150px 0;
+      padding: 80px 0;
     }
   
     .competency-title
