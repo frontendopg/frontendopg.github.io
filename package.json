@@ -10,11 +10,15 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
     "bootstrap": "^5.2.3",
     "bootstrap-vue": "^2.23.1",
     "core-js": "^3.8.3",
     "swiper": "^11.0.5",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vuelidate": "^0.7.7",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

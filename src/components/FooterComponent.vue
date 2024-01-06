@@ -53,6 +53,99 @@
               </div>
             </form>
           </div>
+          <div class="form-popup" id="form-popup">
+
+            <form id = "Form" @submit.prevent="submitForm">
+              <div class = "form-row">
+                <div class = "col-12">
+                  <label class = "text-light form-group"><br/>
+                    
+                    <input class = "form-control form-control-md info" 
+                    type = "text"  
+                    name="name" 
+                    id="name" 
+                    v-model="formData.name" 
+                    @blur="$v.name.$touch()" 
+                    placeholder = "Ваше имя" autocomplete = "off">
+                    
+                    <div class="error" v-if="$v.name.$error">
+                    <template v-if="!$v.name.maxLength">
+                      Длина имени не должна превышать {{ $v.name.$params.maxLength.max }} символов
+                    </template>
+                    <template v-else-if="!$v.name.alpha">
+                    Имя должно содержать только буквы
+                    </template>
+                    <template v-else>
+                    Имя обязательно для заполнения
+                    </template>
+                  </div>
+                  </label><br/>
+                </div>
+                <div class = "col-12">
+                  <label class = "text-light form-group"><br/>
+                    <input class = "form-control form-control-md info" type = "text" 
+                    id = "number"
+                    name = "number"
+                    v-model="formData.number" 
+                    @blur="$v.number.$touch()" 
+                    placeholder = "Телефон" autocomplete = "off">
+                    <div class="error" v-if="$v.number.$error">
+                    <template v-if="!$v.number.maxLength">
+                      Длина номера должна быть равной {{ $v.name.$params.maxLength.max }} символов
+                    </template>
+                    <template v-else-if="!$v.number.alpha">
+                    Номер должен содержать только цифры
+                    </template>
+                    <template v-else>
+                    Номер обязателен для заполнения
+                    </template>
+                  </div>
+                  
+                  </label><br/>
+                </div>
+                <div class = "col-12">
+                  <label class = "text-light form-group"><br/>
+                    <input class = "form-control form-control-md info" 
+                    type = "email" 
+                    id = "email" 
+                    name = "email" 
+                    v-model="formData.email" 
+                    @blur="$v.email.$touch()" 
+                    
+                    placeholder = "E-mail" autocomplete = "off">
+                  
+                    <div class="error" v-if="$v.email.$error">
+                    <template v-if="!$v.email.alpha">
+                    Введите E-mail корректно
+                    </template>
+                    <template v-else>
+                    E-mail обязателен к заполнению
+                    </template>
+                  </div>
+                  </label><br/>
+                </div>
+                <div class = "col-12">
+                  <label class = "form-group"><br/>
+                    <textarea class = "form-control form-control-md info" 
+                    name = "message" 
+                    id = "message" 
+                    placeholder = "Ваш комментарий" autocomplete = "off"></textarea>
+                  </label><br/>
+                </div>
+                <div class = "col-12">
+                  <label class = "text-light form-group text-checkbox">
+                    <input type = "checkbox" id = "CB" name = "Agreement" class = "info" required>
+                    Отправляя заявку, я даю согласие на
+                    <a class = "form-politics" href = "" rel = "nofollow">обработку своих персональных данных. *</a>
+                  </label><br/>
+                </div>
+                <div class = "col-12 mt-3">
+                  <button class = "btn btn-footer" type="submit" id = "Button" :disabled="$v.$invalid" >Свяжитесь с нами!</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
         </div>
         <hr>
           <div class="col-12 footer+">
@@ -93,10 +186,67 @@
   </template>
   
   <script>
+
+  import { mapState } from 'vuex'
+  import { required, minLength, maxLength } from 'vuelidate/lib/validators'
+  import { validationMixin } from 'vuelidate'
+
   export default
   {
-    name: "FooterComponent"
-  }
+    name: "FooterComponent",
+    data() {
+    return {
+      name: null,
+      number: null,
+      email: null,
+      message: null,
+    };
+  },
+    mixins: [validationMixin],
+    validations: {
+    name: {
+      required,
+      maxLength: maxLength(25),
+      alpha: val => /^[а-яё]*$/i.test(val),
+    },
+    number: {
+      required,
+      minLength: minLength(11),
+      maxLength: maxLength(11),
+      alpha: val => /^[0-9]*$/i.test(val),
+    },
+    email: {
+      required,
+    },
+    },
+    
+    computed: {
+    ...mapState(['formData'])
+    },
+    methods: {
+    submitForm() {
+      if (!this.$v.$invalid) {
+        // Handle form submission logic here
+        const formData = new FormData()
+        formData.append('name', this.formData.name)
+        formData.append('number', this.formData.number)
+        formData.append('email', this.formData.email)
+        formData.append('message', this.formData.message)
+
+        fetch('https://formcarry.com/s/b_pRIT1yrl', {
+          method: 'POST',
+          body: formData
+        })
+          .then(response => {
+            response.ok;
+          })
+          .catch(error => {
+            console.log(error);
+          })
+      }
+    }
+  },
+}
   </script>
   
   <style scoped>
