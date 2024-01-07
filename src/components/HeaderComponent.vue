@@ -308,12 +308,33 @@
       color: white;
       position: center;
     }
+    #navbar
+      {
+       position: fixed;
+       top: 0;
+       z-index: 1030; 
+       background-color:#292b2c;
+       width: 101%;
+      }
+      .text-about-main{
+        margin-top: 10%;
+      }
   
     @media screen and (min-width: 992px)
     {
       .dropdown-menu
       {
         background-color: #f14d34;
+      }
+      #navbar
+      {
+       position: relative;
+       background-color: transparent;
+       top: 0;
+       z-index: 0; 
+      }
+      .text-about-main{
+        margin-top: 0%;
       }
     }
   
