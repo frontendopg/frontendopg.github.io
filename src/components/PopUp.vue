@@ -184,6 +184,7 @@ const submitForm = async () => {
     padding: 20px;
     border: 1px solid #ccc;
     transition: opacity 0.5s; /* Add opacity transition */
+    z-index: 1000;
   }
   
 

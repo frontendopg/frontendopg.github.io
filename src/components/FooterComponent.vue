@@ -9,6 +9,7 @@ const openPopup = () => {
 };
 </script>
 <template>
+  <router-view></router-view>
     <div class = "container-fluid pt-3 pb-5 pb-md-0 footer_region" id = "Footer">
       <div class = "footer_background"></div>
       <div class = "row d-flex mt-2 px-2">
@@ -63,7 +64,7 @@ const openPopup = () => {
               </div>
             </form>
           </div>
-          <router-view></router-view>
+          
         </div>
         <hr>
           <div class="col-12 footer+">
