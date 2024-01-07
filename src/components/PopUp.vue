@@ -67,7 +67,7 @@ const submitForm = async () => {
 </script>
 <template>
     
-<div class="justify-content-center flex popup" :class="{ open: isOpen }">
+<div class="justify-content-center flex popup" :class="{ open: isOpen }" ref="popup">
 <div class="col-12 col-md-5 form-form">
 <form id = "Form2" @submit.prevent="submitForm">
   <div class = "form-row">
@@ -153,7 +153,7 @@ const submitForm = async () => {
       };
     },
     mounted() {
-      this.isOpen = true;
+      this.animateOpacity();
     },
     methods: {
       animateOpacity() {
