@@ -6,7 +6,7 @@
             Тарифы
           </h1>
         </div>
-        <div class="col-10 price-row mx-auto">
+        <div class="col-sm-12 col-lg-10 price-row mx-auto">
           <div class="row">
             <div class="col-10 col-md-4 mx-auto mt-3 price-block-wrapper price-van">
               <div class="price-block py-2 px-2 pb-3 price-standard">
@@ -257,13 +257,11 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-3"></div>
-        <div class="col-3 col-sm-6 rate-link-block text-center">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-lg-6 rate-link-block text-center">
           Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные условия!
           <a href="#FooterApp" class="rate-link d-block mt-3">Получить индивидуальный тариф</a>
         </div>
-        <div class="col-3"></div>
       </div>
     </div>
   </template>
@@ -279,7 +277,19 @@
   .price-block-wrapper{
     transition: all 0.5s ease-in-out;
   }
-  
+  @media(max-width: 767px){
+  .price-text{
+    font-size: 14px;
+    color: rgb(146, 142, 142);
+  }
+.price-block-wrapper{
+  padding: 0;
+  margin: 0;
+}
+}
+.price-wrapper{
+  opacity: 100%;
+}
   .price-header{
     color:#f14c24;
     font-size: 22px;
@@ -340,7 +350,6 @@
     background: #f14c24;
     color:white;
   }
-  
   .price-text p{
     margin-bottom: 5px;
   }
@@ -365,6 +374,7 @@
   }
   .rate-link-block{
     color:grey;
+    font-size: 15px;
   }
   .rate-link{
     text-decoration: underline;
