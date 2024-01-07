@@ -1,5 +1,5 @@
 <script setup>
-import { reactive, computed } from 'vue'
+import { reactive, computed, watchEffect } from 'vue'
 import useVuelidate from '@vuelidate/core'
 import { required, minLength, maxLength, email, numeric, helpers } from '@vuelidate/validators'
 const formData = reactive({
@@ -64,6 +64,16 @@ const submitForm = async () => {
     }
   }
 };
+const savedFormData = localStorage.getItem('formData');
+  if (savedFormData) {
+    Object.assign(formData, JSON.parse(savedFormData));
+  }
+
+  // Watch formData and save to localStorage on changes
+  watchEffect(() => {
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+
 </script>
 <template>
     
@@ -146,6 +156,7 @@ const submitForm = async () => {
   </template>
   
   <script>
+  
   export default {
     data() {
       return {
@@ -169,6 +180,7 @@ const submitForm = async () => {
         };
         window.requestAnimationFrame(animate);
       },
+      
     },
   };
   </script>
