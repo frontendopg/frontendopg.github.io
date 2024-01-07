@@ -141,6 +141,8 @@
   </script>
   
   <style scoped>
+ 
+
   @media (max-width: 1300px)
   {
     .container
@@ -179,4 +181,12 @@
     text-align: left;
     margin-top: 20px;
   }
+
+  @media (max-width: 767px)
+  {
+    .competency-title
+    {
+      font-size: 25px;
+    }
+  } 
   </style>
