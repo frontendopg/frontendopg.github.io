@@ -53,6 +53,13 @@ const submitForm = async () => {
         .then(response => {
           if (response.ok) {
             alert('Form submitted successfully!');
+            // Reset formData to its initial state
+            formData.login = "";
+            formData.number = "";
+            formData.email = "";
+            formData.message = "";
+            // Also clear the saved form data from localStorage
+            localStorage.removeItem('formData');
           } else {
             alert('Failed to submit the form. Please try again.');
           }
