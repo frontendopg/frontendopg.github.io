@@ -64,6 +64,7 @@ const submitForm = async () => {
             formData.message = "";
             // Also clear the saved form data from localStorage
             localStorage.removeItem('formData');
+            r$.push("/");
           } else {
             alert('Failed to submit the form. Please try again.');
           }
