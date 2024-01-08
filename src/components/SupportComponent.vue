@@ -230,7 +230,6 @@
       position: relative;
       z-index: 20;
     }
-  
     @media (max-width: 1199px)
     {
       .experience
@@ -315,6 +314,18 @@
       {
         position: relative;
         width: 70%;
+      }
+      .experience
+      {
+        padding: 210px 0 0 0;
+      }
+      .experience h2, .support-text
+      {
+        font-size: 25px;
+      }
+      .support-text
+      {
+        padding: 0 30px;
       }
     }
   </style>

@@ -2,6 +2,8 @@
 import { reactive, computed, watchEffect } from 'vue'
 import useVuelidate from '@vuelidate/core'
 import { required, minLength, maxLength, email, numeric, helpers } from '@vuelidate/validators'
+import router from '@/router'
+
 const formData = reactive({
   login:"",
   number:"",
@@ -71,6 +73,11 @@ const submitForm = async () => {
     }
   }
 };
+const r$ = router;
+const openPopup = () => {
+  r$.push('/');
+
+};
 const savedFormData = localStorage.getItem('formData');
   if (savedFormData) {
     Object.assign(formData, JSON.parse(savedFormData));
@@ -82,11 +89,15 @@ const savedFormData = localStorage.getItem('formData');
   });
 
 </script>
-<template>
-    
-<div class="justify-content-center flex popup" :class="{ open: isOpen }" ref="popup">
-<div class="col-12 col-md-5 form-form">
+<template> 
+<div class="justify-content-center flex popup col-9 col-md-6 col-lg-6" :class="{ open: isOpen }" ref="popup">
+<div class="col-12 form-form">
 <form id = "Form2" @submit.prevent="submitForm">
+  <div class ="row justify-content-end">
+  <div class = "col-1">
+    <button class = "btn-footer-close " type="button" id = "button-open"  @click="openPopup">x</button>
+  </div>
+  </div>
   <div class = "form-row">
     <div class = "col-12">
       <label class = "text-light form-group"><br/>
@@ -199,7 +210,7 @@ const savedFormData = localStorage.getItem('formData');
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: rgb(38, 38, 58);
     padding: 20px;
     border: 1px solid #ccc;
     transition: opacity 0.5s; /* Add opacity transition */
@@ -278,11 +289,27 @@ const savedFormData = localStorage.getItem('formData');
   background: #ef4c35;
   transition: 0.2s;
   width: 100%;
+  border-color:#ef4c35;
 }
-
+.btn-footer-close{
+  display: inline-block;
+  color:#ef4c35;
+  text-decoration: none;
+  padding: 0;
+  transition: 0.2s;
+  font-size: 25px;
+  position:relative;
+  text-align: right;
+  border: none;
+  background-color:rgb(38, 38, 58);
+}
+.btn-footer-close:focus{
+  outline: none;
+  box-shadow: none;
+}
 .form-row
 {
-  margin-left: 4em;
+  margin-left: 1em;
 }
 
 .phone, .email
@@ -290,7 +317,7 @@ const savedFormData = localStorage.getItem('formData');
   font-size:25px;
 }
 
-.form-group
+  .form-group
 {
   width: 100%;
 }
