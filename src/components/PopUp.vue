@@ -94,8 +94,8 @@ const savedFormData = localStorage.getItem('formData');
 
 </script>
 <template> 
-<div class="justify-content-center flex popup col-9 col-md-6 col-lg-6" :class="{ open: isOpen }" ref="popup">
-<div class="col-12 col-md-5 form-form">
+<div class="justify-content-center flex popup  col-9 col-sm-8 col-md-6 col-lg-5" :class="{ open: isOpen }" ref="popup">
+<div class="col-12 form-form">
 <div class="lds-ellipsis" v-if="isLoading">
   <div></div>
   <div></div>
@@ -103,7 +103,7 @@ const savedFormData = localStorage.getItem('formData');
   <div></div>
 </div>
 <form id = "Form2" @submit.prevent="submitForm"   v-if="!isLoading">
-  <div class ="row justify-content-end">
+  <div class ="row justify-content-end col-12">
   <div class = "col-1">
   </div>
     <button class = "btn-footer-close " type="button" id = "button-open"  @click="openPopup">x</button>
@@ -169,12 +169,12 @@ const savedFormData = localStorage.getItem('formData');
       <label class = "text-light form-group text-checkbox">
         <input type = "checkbox" id = "CB" name = "Agreement" class = "info" required>
         Отправляя заявку, я даю согласие на
-        <a class = "form-politics" href = "" rel = "nofollow">обработку своих персональных данных. *</a>
+        <a class = "form-politics" href = "" rel = "nofollow">обработку своих персональных данных.</a>
       </label><br/>
     </div>
     <div class = "col-12 mt-3">
       <button class = "btn btn-footer" type="submit" id = "Button" :disabled="v$.$pending || v$.$invalid" >Свяжитесь с нами!</button>
-      <div v-if="v$.$error">Произошла ошибка при отправке формы. Пожалуйста, попробуйте еще раз.</div>.
+      <div v-if="v$.$error">Произошла ошибка при отправке формы. Пожалуйста, попробуйте еще раз.</div>
     </div>
   </div>
 </form>
@@ -277,11 +277,13 @@ const savedFormData = localStorage.getItem('formData');
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(18, 18, 46);
+    background-color: rgb(38, 38, 58);
     padding: 20px;
     border: 1px solid #ccc;
     transition: opacity 0.5s; /* Add opacity transition */
     z-index: 1000;
+    border: none;
+    border-radius: 8px;
   }
   
 
