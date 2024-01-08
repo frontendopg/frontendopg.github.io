@@ -1,7 +1,9 @@
 <script setup>
-import { reactive, computed, watchEffect } from 'vue'
+import { reactive, computed, watchEffect, ref } from 'vue'
 import useVuelidate from '@vuelidate/core'
 import { required, minLength, maxLength, email, numeric, helpers } from '@vuelidate/validators'
+import router from '@/router'
+
 const formData = reactive({
   login:"",
   number:"",
@@ -29,12 +31,13 @@ const rules = computed(()=>
     message: {},
   };
 });
+const isLoading = ref(false); // новая переменная состояния
 const v$ = useVuelidate(rules, formData);
 const submitForm = async () => {
   const result = await v$.value.$validate();
   if (result) {
-    // Handle form submission logic here
     if (!v$.value.$invalid) {
+      isLoading.value = true; // начало загрузки
       const formDataToSend = {
         login: formData.login,
         number: formData.number,
@@ -51,6 +54,7 @@ const submitForm = async () => {
         body: JSON.stringify(formDataToSend),
       })
         .then(response => {
+          isLoading.value = false; // конец загрузки
           if (response.ok) {
             alert('Form submitted successfully!');
             // Reset formData to its initial state
@@ -60,16 +64,23 @@ const submitForm = async () => {
             formData.message = "";
             // Also clear the saved form data from localStorage
             localStorage.removeItem('formData');
+            r$.push("/");
           } else {
             alert('Failed to submit the form. Please try again.');
           }
         })
         .catch(error => {
+          isLoading.value = false; // конец загрузки
           console.error('Error submitting the form:', error);
           alert('An error occurred while submitting the form. Please try again.');
         });
     }
   }
+};
+const r$ = router;
+const openPopup = () => {
+  r$.push('/');
+
 };
 const savedFormData = localStorage.getItem('formData');
   if (savedFormData) {
@@ -82,11 +93,21 @@ const savedFormData = localStorage.getItem('formData');
   });
 
 </script>
-<template>
-    
-<div class="justify-content-center flex popup" :class="{ open: isOpen }" ref="popup">
+<template> 
+<div class="justify-content-center flex popup col-9 col-md-6 col-lg-6" :class="{ open: isOpen }" ref="popup">
 <div class="col-12 col-md-5 form-form">
-<form id = "Form2" @submit.prevent="submitForm">
+<div class="lds-ellipsis" v-if="isLoading">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<form id = "Form2" @submit.prevent="submitForm"   v-if="!isLoading">
+  <div class ="row justify-content-end">
+  <div class = "col-1">
+  </div>
+    <button class = "btn-footer-close " type="button" id = "button-open"  @click="openPopup">x</button>
+  </div>
   <div class = "form-row">
     <div class = "col-12">
       <label class = "text-light form-group"><br/>
@@ -194,12 +215,69 @@ const savedFormData = localStorage.getItem('formData');
   
   <style scoped>
   /* Define styles for the pop-up container and content */
+  
+  .lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+  
   .popup {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: rgb(18, 18, 46);
     padding: 20px;
     border: 1px solid #ccc;
     transition: opacity 0.5s; /* Add opacity transition */
@@ -278,11 +356,27 @@ const savedFormData = localStorage.getItem('formData');
   background: #ef4c35;
   transition: 0.2s;
   width: 100%;
+  border-color:#ef4c35;
 }
-
+.btn-footer-close{
+  display: inline-block;
+  color:#ef4c35;
+  text-decoration: none;
+  padding: 0;
+  transition: 0.2s;
+  font-size: 25px;
+  position:relative;
+  text-align: right;
+  border: none;
+  background-color:rgb(38, 38, 58);
+}
+.btn-footer-close:focus{
+  outline: none;
+  box-shadow: none;
+}
 .form-row
 {
-  margin-left: 4em;
+  margin-left: 1em;
 }
 
 .phone, .email
@@ -290,7 +384,7 @@ const savedFormData = localStorage.getItem('formData');
   font-size:25px;
 }
 
-.form-group
+  .form-group
 {
   width: 100%;
 }
@@ -298,6 +392,7 @@ const savedFormData = localStorage.getItem('formData');
 .info
 {
   background: transparent;
+  color:#fff;
 }
   .emblems-list {
     list-style: none;
