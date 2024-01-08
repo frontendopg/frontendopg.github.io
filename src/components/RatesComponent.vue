@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid" id="RatesApp" style = "margin-top: 10em">
+    <div class="container-fluid" id="RatesApp">
       <div class="row price-wrapper">
         <div class="col-12 my-4 price-header text-center text-black">
           <h1>
@@ -273,6 +273,33 @@
   </script>
   
   <style scoped>
+
+  h1
+  {
+    margin-top: 160px;
+  }
+  .container-fluid 
+  {
+  position: relative;
+  }
+
+
+  .container-fluid::before {
+  background: url("../assets/img/druplar-logo.svg") right;
+  background-position: 550px -170px;
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
+  }
+
+  
   
   .price-block-wrapper{
     transition: all 0.5s ease-in-out;
@@ -282,11 +309,24 @@
     font-size: 14px;
     color: rgb(146, 142, 142);
   }
-.price-block-wrapper{
+  
+  .price-block-wrapper{
   padding: 0;
   margin: 0;
+  }
+  .container-fluid::before {
+    background: url("../assets/img/druplar-logo-background-mobile.png")no-repeat;
+    background-position: 600px 10px;
+    background-size: 200% 140%;
+  }
 }
+
+@media(max-width: 990px){
+  .container-fluid::before {
+  background-position: 200px -170px;
+  }
 }
+
 .price-wrapper{
   opacity: 100%;
 }
