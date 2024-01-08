@@ -1,5 +1,5 @@
 <script setup>
-import { reactive, computed, ref } from 'vue'
+import { reactive, computed, watchEffect, ref } from 'vue'
 import useVuelidate from '@vuelidate/core'
 import { required, minLength, maxLength, email, numeric, helpers } from '@vuelidate/validators'
 import router from '@/router'
@@ -57,6 +57,14 @@ const submitForm = async () => {
           isLoading.value = false; // конец загрузки
           if (response.ok) {
             alert('Form submitted successfully!');
+            // Reset formData to its initial state
+            formData.login = "";
+            formData.number = "";
+            formData.email = "";
+            formData.message = "";
+            // Also clear the saved form data from localStorage
+            localStorage.removeItem('formData');
+            r$.push("/");
           } else {
             alert('Failed to submit the form. Please try again.');
           }
@@ -69,15 +77,24 @@ const submitForm = async () => {
     }
   }
 };
-
 const r$ = router;
 const openPopup = () => {
   r$.push('/');
 
 };
+const savedFormData = localStorage.getItem('formData');
+  if (savedFormData) {
+    Object.assign(formData, JSON.parse(savedFormData));
+  }
+
+  // Watch formData and save to localStorage on changes
+  watchEffect(() => {
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+
 </script>
 <template> 
-<div class="justify-content-center flex popup col-9 col-md-6 col-lg-6" :class="{ open: isOpen }" ref="popup">
+<div class="justify-content-center flex popup  col-9 col-sm-8 col-md-6 col-lg-5" :class="{ open: isOpen }" ref="popup">
 <div class="col-12 form-form">
 <div class="lds-ellipsis" v-if="isLoading">
   <div></div>
@@ -85,12 +102,13 @@ const openPopup = () => {
   <div></div>
   <div></div>
 </div>
-<form id = "Form2" @submit.prevent="submitForm" v-if="!isLoading">
-  <div class ="row justify-content-end">
+<form id = "Form2" @submit.prevent="submitForm"   v-if="!isLoading">
+  <div class ="row justify-content-end col-12">
   <div class = "col-1">
+  
     <button class = "btn-footer-close " type="button" id = "button-open"  @click="openPopup">x</button>
   </div>
-  </div>
+</div>
   <div class = "form-row">
     <div class = "col-12">
       <label class = "text-light form-group"><br/>
@@ -152,12 +170,12 @@ const openPopup = () => {
       <label class = "text-light form-group text-checkbox">
         <input type = "checkbox" id = "CB" name = "Agreement" class = "info" required>
         Отправляя заявку, я даю согласие на
-        <a class = "form-politics" href = "" rel = "nofollow">обработку своих персональных данных. *</a>
+        <a class = "form-politics" href = "" rel = "nofollow">обработку своих персональных данных.</a>
       </label><br/>
     </div>
     <div class = "col-12 mt-3">
       <button class = "btn btn-footer" type="submit" id = "Button" :disabled="v$.$pending || v$.$invalid" >Свяжитесь с нами!</button>
-      <div v-if="v$.$error">Произошла ошибка при отправке формы. Пожалуйста, попробуйте еще раз.</div>.
+      <div v-if="v$.$error">Произошла ошибка при отправке формы. Пожалуйста, попробуйте еще раз.</div>
     </div>
   </div>
 </form>
@@ -167,6 +185,7 @@ const openPopup = () => {
   </template>
   
   <script>
+  
   export default {
     data() {
       return {
@@ -190,6 +209,7 @@ const openPopup = () => {
         };
         window.requestAnimationFrame(animate);
       },
+      
     },
   };
   </script>
@@ -263,6 +283,8 @@ const openPopup = () => {
     border: 1px solid #ccc;
     transition: opacity 0.5s; /* Add opacity transition */
     z-index: 1000;
+    border: none;
+    border-radius: 8px;
   }
   
 
