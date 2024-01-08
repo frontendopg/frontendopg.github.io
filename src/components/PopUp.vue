@@ -104,8 +104,10 @@ const savedFormData = localStorage.getItem('formData');
 </div>
 <form id = "Form2" @submit.prevent="submitForm"   v-if="!isLoading">
   <div class ="row justify-content-end col-12">
+    <div class="col-10 col-sm-11">
+      <h3>Форма заявки</h3>
+    </div>
   <div class = "col-1">
-  
     <button class = "btn-footer-close " type="button" id = "button-open"  @click="openPopup">x</button>
   </div>
 </div>
@@ -216,7 +218,11 @@ const savedFormData = localStorage.getItem('formData');
   
   <style scoped>
   /* Define styles for the pop-up container and content */
-  
+  h3{
+    color: white;
+    text-align: left;
+    margin-left: 0.8em;
+  }
   .lds-ellipsis {
   display: inline-block;
   position: relative;
