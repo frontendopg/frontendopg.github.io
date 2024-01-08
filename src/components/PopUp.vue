@@ -105,9 +105,10 @@ const savedFormData = localStorage.getItem('formData');
 <form id = "Form2" @submit.prevent="submitForm"   v-if="!isLoading">
   <div class ="row justify-content-end col-12">
   <div class = "col-1">
-  </div>
+  
     <button class = "btn-footer-close " type="button" id = "button-open"  @click="openPopup">x</button>
   </div>
+</div>
   <div class = "form-row">
     <div class = "col-12">
       <label class = "text-light form-group"><br/>
