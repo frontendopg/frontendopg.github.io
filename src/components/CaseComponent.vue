@@ -10,23 +10,23 @@
               <div class="keys-img" :style="{'background-image': 'url(' + require('../assets/img/img_noyt1.jpg') + ')'}"></div>
               <div class="keys-header">
                 <h2 class="link">
-                                            <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
+                                            <a href="#"><span>Разработка сайта на Drupal 7 для преприятий</span></a>
                                         </h2>
                 <div class="keys-date">24.12.2023</div>
               </div>
               <div class="keys-content">
                 <div class="field field--name-body  field--label-hidden field--item">
-                  <p>Эти слова совершенно справедливы, однако гипнотический рифф продолжает паузный пласт.</p>
+                  <p>Влияния скорости загрузки страниц сайта на отказы и конверсии. Кейс ускорения....</p>
                 </div>
               </div>
             </div>
           </article>
 
           <article about="#" class="blog is-promoted is-sticky keys-2">
-            <div class="keys-wrapper" :style="{'background-image': 'url(' + require('../assets/img/img_noyt3.jpg') + ')'}">
+            <div class="keys-wrapper" :style="{'background-image': 'url(' + require('../assets/img/img_case5.png') + ')'}">
               <div class="keys-header">
                 <h2 class="link">
-                                            <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span>
+                                            <a href="#"><span>Разработка сайта на Drupal 7 для преприятий</span>
                                             </a>
                                         </h2>
               </div>
@@ -38,7 +38,7 @@
               <div class="keys-img" :style="{'background-image': 'url(' + require('../assets/img/img_case4.jpeg') + ')'}"></div>
               <div class="keys-header">
                 <h2 class="link">
-                                            <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
+                                            <a href="#"><span>Разработка сайта на Drupal 7 для преприятий</span></a>
                                         </h2>
                 <div class="keys-date">24.12.2023</div>
               </div>
@@ -50,7 +50,7 @@
               <div class="keys-img" :style="{'background-image': 'url(' + require('../assets/img/img_case3.jpeg') + ')'}"></div>
               <div class="keys-header">
                 <h2 class="link">
-                                            <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
+                                            <a href="#"><span>Разработка сайта на Drupal 7 для преприятий</span></a>
                                         </h2>
                 <div class="keys-date">24.12.2023</div>
               </div>
@@ -62,7 +62,7 @@
               <div class="keys-img" :style="{'background-image': 'url(' + require('../assets/img/img_noyt4.jpg') + ')'}"></div>
               <div class="keys-header">
                 <h2 class="link">
-                                            <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета </span>
+                                            <a href="#"><span>Разработка сайта на Drupal 7 для преприятий </span>
                                             </a>
                                         </h2>
                 <div class="keys-date">
@@ -71,17 +71,17 @@
               </div>
               <div class="keys-content">
                 <div class="field field--name-body  field--label-hidden field--item">
-                  <p>Эти слова совершенно справедливы, однако гипнотический рифф продолжает паузный пласт.</p>
+                  <p>Влияния скорости загрузки страниц сайта на отказы и конверсии. Кейс ускорения....</p>
                 </div>
               </div>
             </div>
           </article>
 
           <article about="#" class="blog is-promoted keys-2 clearfix">
-            <div class="keys-wrapper" :style="{'background-image': 'url(' + require('../assets/img/img_case2.jpg') + ')'}">
+            <div class="keys-wrapper" :style="{'background-image': 'url(' + require('../assets/img/img_noyt5.jpg') + ')'}">
               <div class="keys-header">
                 <h2 class="link">
-                                            <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span>
+                                            <a href="#"><span>Разработка сайта на Drupal 7 для преприятий</span>
                                             </a>
                                         </h2>
               </div>
@@ -94,7 +94,7 @@
               <div class="keys-img" :style="{'background-image': 'url(' + require('../assets/img/img_case2.jpg') + ')'}"></div>
               <div class="keys-header">
                 <h2 class="link">
-                                            <a href="#"><span>Настройка выгрузки YML для Яндекс.Маркета</span></a>
+                                            <a href="#"><span>Разработка сайта на Drupal 7 для преприятий</span></a>
                                         </h2>
                 <div class="keys-date">
                   24.12.2023
@@ -126,7 +126,7 @@
     }
     #block-views-block-blog-block-1 .block-title {
         font-weight: bold;
-        font-size: 42px;
+        font-size: 34px;
         margin-bottom: 46px;
         margin-top: 0;
         text-align: center;
@@ -156,7 +156,7 @@
         float: left;
         margin: 0 auto;
         margin-bottom: 20px;
-        min-height: 475px;
+        min-height: 380px;
         font-family: 'Montserrat', sans-serif;
         overflow: hidden;
         cursor: pointer;
@@ -167,7 +167,7 @@
         float: left;
         margin: 0 auto;
         margin-bottom: 20px;
-        min-height: 475px;
+        min-height: 380px;
         font-family: 'Montserrat', sans-serif;
         overflow: hidden;
         cursor: pointer;
@@ -204,7 +204,7 @@
     }
     .keys-header h2 {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.25;
         margin-bottom: 5px;
         width: 320px;
