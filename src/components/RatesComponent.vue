@@ -431,6 +431,7 @@
     .price-block:hover{
       transform: scale(1.1);
     }
+    
   }
   
   @media screen and (min-width: 1000px){

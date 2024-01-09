@@ -32,6 +32,8 @@ const rules = computed(()=>
   };
 });
 const isLoading = ref(false); // новая переменная состояния
+const isFormClosing = ref(false);
+const popup = ref(null);
 const v$ = useVuelidate(rules, formData);
 const submitForm = async () => {
   const result = await v$.value.$validate();
@@ -78,8 +80,21 @@ const submitForm = async () => {
   }
 };
 const r$ = router;
-const openPopup = () => {
-  r$.push('/');
+const closePopup = () => {
+  let start = null;
+  isFormClosing.value = true;
+  const animate = (timestamp) => {
+    if (!start) start = timestamp;
+    const progress = timestamp - start;
+    popup.value.style.opacity = Math.max(1 - progress / 1000, 0); // Adjust the duration and minimum opacity as needed
+    if (progress < 1000) { // Adjust the duration as needed
+      window.requestAnimationFrame(animate);
+    } else {
+      popup.value.isOpen = false; // Set the state to close the pop-up window
+      r$.push("/"); // Add routing action here
+    }
+  };
+  window.requestAnimationFrame(animate);
 
 };
 const savedFormData = localStorage.getItem('formData');
@@ -108,7 +123,7 @@ const savedFormData = localStorage.getItem('formData');
       <h3>Форма заявки</h3>
     </div>
   <div class = "col-1">
-    <button class = "btn-footer-close " type="button" id = "button-open"  @click="openPopup">x</button>
+    <button class = "btn-footer-close " type="button" id = "button-open"  @click="closePopup" :disabled="isFormClosing">x</button>
   </div>
 </div>
   <div class = "form-row">
